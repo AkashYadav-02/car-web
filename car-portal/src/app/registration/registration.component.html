@@ -1,0 +1,57 @@
+<!-- <div class="vh-100 bg-image" id="background" style="background-image: url('../../assets/images/background.png');   ">
+
+</div> -->
+<div class="mainclass">
+  <!-- <img src="../../assets/images/background.png"> -->
+  <div class="childclass1">
+    <img src="https://s3-alpha-sig.figma.com/img/c259/7a8d/7f9091727584b82529cb60ae7e5e7c81?Expires=1696809600&Signature=BrXvYQjujd7hPBC58a89qabnssdYSVSPRr8x0nHaUKW9X7CiKTkWixkLxSffm2jNnEet45eQHQo5jA8144I7BAqvZtntOS5f4DiDwdb5lnhV-x42IRh3aSj8pk55vPGdx7qWez7VMmGZRRKdgmp5e-R5GEWOB5ZqbCmqq04ds6FsqScnjkfx73ltc1I7ju7RMpjB6MX72M5wkmKmaUjFwPBDY8I8eM9OsRT2ql9F6f1aLpEv8yjVe3kYsc6~t5OVg4l73oNUOeyXkbIMrYJww2roTisTsZSNBLmUrFP5mmw2g04YMVcnfiZ~fwoBoNJpVLJt0CLOnHpap~XL7n9Hjw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+    <div class="subchild1">
+      <h1>Building the Future...</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+  <div class="childclass2">
+    <p>LETS GET YOU STARTED</p>
+    <h5 style="font-size: 17px; margin-bottom: 7%;">Create an Account</h5>
+
+    <form [formGroup]="register" (ngSubmit)="registerdata(register)">
+      
+     <div class="form-group">
+    <label for="firstname">First Name<span class="required-asterisk">*</span></label>   
+    <input type="text" class="form-control" formControlName="fname" required minlength="2" pattern="[a-zA-Z ]*" placeholder="First Name" >
+   
+
+    <label for="lastname">Last Name <span class="required-asterisk">*</span></label>
+    <input type="text" class="form-control form-group required" formControlName="lname" required minlength="2" pattern="[a-zA-Z ]*" placeholder="Last Name">
+    
+    <label for="email">Email<span class="required-asterisk">*</span></label>
+  <input type="email"  class="form-control" formControlName="email" required email  placeholder="Email">
+  
+  <label for="password" >Password<span class="required-asterisk">*</span></label>
+<input type="password"  class="form-control" formControlName="password"  required  placeholder="Password">
+
+<label for="password" >Password<span class="required-asterisk">*</span></label>
+<input type="password"  class="form-control" formControlName="Confirmpassword"  required placeholder="Password">
+
+</div> 
+<div class="form-check">
+  <input class="check-input" type="checkbox" name="termsAndConditions" required>
+  <label class="form-check-label" for="flexCheckDefault">
+    I agree to Terms & Conditions
+  </label>
+</div>
+  <p-toast position="top-center" key="tc"></p-toast>
+
+  <button type="submit" class="started btn" (click)="redirectToLoginPage()">Get Started</button>
+  
+      <!-- <button class="started btn"[disabled]="!myForm.form.valid">GET STARTED</button> -->
+      <div><p-divider align="center" type="solid">Or</p-divider></div>
+      <button class="googlee btn btn-google"><img src="../../assets/images/icons8-google.jpg" alt="Google Logo" class="google-logo mr-2">Sign Up with Google</button>
+      <button class="googlee btn btn-google"><img src="../../assets/images/apple.jpg" alt="Google Logo" class="google-logo mr-2">Sign Up with Apple</button>
+      <!-- <span> <a class="fw-bold text-body" routerLink="login">LoginHere</a></span> -->
+      <span>Already have an account? <a  class="fw-bold text-body" routerLink="login">LoginHere</a></span>
+    </form>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
