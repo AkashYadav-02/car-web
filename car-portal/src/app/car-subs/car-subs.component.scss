@@ -1,0 +1,198 @@
+.car-subs{
+    margin-left: 65px;
+    margin-right: 65px;
+    background-color: rgb(255, 255, 255);
+}
+
+img{
+    height: 2.5rem;
+}
+
+.car-subs-location button{
+    width: 11rem;
+    height: 2.5rem;
+    font-weight: 500;
+    background-color: #f4f4f4;
+}
+
+.car-subs-search input{
+    background-color: #f4f4f4;
+    width: 20rem;
+    height: 2.5rem;
+}
+
+.car-subs-search img{
+    max-width: 20%;
+    max-height: 20%;
+}
+.vr{
+    width: 2px;
+    color: black;
+}
+
+.car-subs-logogroup img{
+    max-width: 3.5rem;
+    max-height: 2.2rem;
+}
+
+.car-subs-header{
+    margin-top: 2.5rem;
+    margin-bottom: 1.7rem;
+}
+.car-subs-header p{
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.car-subs-header img{
+    max-width: 1rem;
+    max-height: 1rem;
+    margin-top: 0.3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.slide{
+    width: 47rem;
+    height: 32rem;
+}
+
+.carousel-item img{
+    height: 25rem;
+    border-radius: 10px;
+}
+
+.carousel-indicators{
+    width: 47rem;
+    margin: 0px;
+}
+
+.carousel-indicators button{
+    width: 12rem;
+    height: 6rem;
+}
+
+.carousel-indicators img{
+    height: 6rem;
+    border-radius: 4px;
+}
+
+.leftcard {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family: "Montserrat";
+    color: black;
+    min-width: 68%;
+    padding: 2.5rem;
+    border-radius: 5px;
+}
+
+
+.leftcard h2{
+    font-weight: bold;
+}
+
+.leftcard p{
+    font-family: "Montserrat";
+    font-size: 23px;
+    font-weight:700
+}
+
+.leftcard h3{
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.leftcard button{
+    width:2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.coloraccessories{
+    display: flex;
+    gap: 30%;
+}
+
+.bodyclass{
+    display: flex;
+    gap: 2%;
+}
+
+.rightcard{
+    width:27.5rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 5px;
+    padding: 1.5rem;
+    font-family: "Montserrat";
+    color: black;
+}
+
+.rightcard hr{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.rightcard-radio{
+    display: flex;
+    gap: 10%;
+    
+}
+
+.rightcard-input-radio{
+    accent-color: red;
+    margin-right: 1rem;
+    height: 20px;
+    width: 20px;
+}
+
+.rightcard-label{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 100px;
+}
+
+.form-check{
+    transform: scale(1.2);
+    accent-color: red;
+}
+
+.form-check-label{
+    font-size: 12px;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.form-check-input:checked{
+    accent-color: red;
+    background-color: red;
+    color: red;
+}
+
+.fields p{
+    width: 160px;
+}
+
+.numbers{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.numbers button{
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+
+// #middle1{
+//     margin-left: 2rem;
+//     margin-right: 1rem;
+// }
+
+// #middle2{
+//     margin-right: 2rem;
+//     margin-left: 1rem;
+// }
