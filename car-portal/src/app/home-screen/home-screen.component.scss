@@ -1,0 +1,401 @@
+.footer {
+    background: black;
+    // flex: auto;
+    // position: relative;
+    display: flex;
+}
+
+.footer-download {
+    color: white;
+    margin-left: 5%;
+    float: left;
+    padding: 2%;
+}
+
+.google-apple-btn {
+    display: flex;
+    // justify-content: flex-end;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 100px;
+}
+
+.google-play-store {
+    position: relative;
+    padding-right: 3px;
+}
+
+.google-img-bg,
+.google-img-text {
+    position: absolute;
+    // padding-left: 30px;
+    margin-left: 10px;
+    top: 0;
+    margin-right: 0;
+    left: 0;
+}
+
+
+.apple-btn {
+    //     width: 282.725px;
+    // height: 80px;
+    // flex-shrink: 0;
+
+    width: 212.725px;
+    height: 62px;
+}
+
+.google-img-bg {
+    width: 207.725px;
+    height: 56px;
+}
+
+.google-img-text {
+    // width: 212.725px;
+    // height: 62px;
+    margin-left: 50px;
+    margin-top: 12px;
+    width: 133.725px;
+    height: 33px;
+}
+
+#footer-description {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#footer-heading {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    /* 109.524% */
+}
+
+hr {
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.footer-bottom {
+    background: black;
+    display: flex;
+    width: auto;
+    // flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    // gap: 1146px;
+}
+
+.footer-aurion-logo {
+    width: 177px;
+    height: 45px;
+    flex-shrink: 0;
+    margin-left: 174.5px;
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+
+.footer-btn {
+    color: #FFF;
+    border: 0;
+    background: none;
+}
+
+.footer-btn-group {
+    justify-content: center;
+    margin: auto;
+}
+
+.quick-links-footer {
+    margin-right: 197px;
+}
+
+.customer-comments {
+
+    margin-top: 10%;
+    margin-left: 156px;
+    margin-right: 156px;
+    margin-bottom: 10%;
+}
+
+.customer-comments-header {
+    display: flex;
+    // position: relative;
+    color: #0F0F0F;
+    font-family: Inter;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    /* 54.6px */
+    letter-spacing: -0.84px;
+}
+
+.customer-comments-description {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    color: #0F0F0F;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 150%;
+    /* 48px */
+    letter-spacing: -0.64px;
+    opacity: 0.8;
+}
+
+.circle {
+    // margin-left: auto;
+    width: 64px;
+    height: 64px;
+}
+
+.arrow {
+    // margin-left: 30px;
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    position: absolute;
+}
+
+.arrow-group {
+    // margin: 0;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    // gap: 500px;
+    padding: 6px;
+}
+
+.align-arrows-circle {
+    display: flex;
+    margin-left: auto;
+}
+
+.arrow-right {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.arrow-left {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+}
+
+.profile-pic-name {
+    color: #0F0F0F;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 36px */
+    letter-spacing: -0.48px;
+}
+
+.profile-pic-country {
+    color: #737373;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 30px */
+    letter-spacing: -0.4px;
+    margin-top: -15px;
+}
+
+.profile-pic-details {
+    display: flex;
+}
+
+.profile-name {
+    margin-left: 20px;
+}
+
+.car-bg {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    /* ie8 */
+}
+
+.real-car {
+    position: absolute;
+    // z-index: 2;
+    left: 95px;
+    // size: 50px;
+    height: 332px;
+    margin-top: 183px;
+
+}
+
+.car-container {
+    position: relative;
+}
+
+.Why-Choose-Us {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    // line-height: 150%;
+    /* 72px */
+    letter-spacing: -0.96px;
+    position: absolute;
+    top: 40px;
+    // right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+}
+
+.Why-Choose-Us-description {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 100px;
+    // right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.call {
+    
+    border-radius: 10px;
+    border: solid;
+    width: 40px;
+    height: 40px;
+    // position: absolute;
+    border-color: #DB2423;
+    margin-left: 32px;
+    background: #DB2423;
+    position: absolute;
+    top: 3px;
+    // right: 50%;
+}
+
+.call-logo-div{
+        margin-top:7%;
+
+    position: absolute;
+    top:25%;
+    right: 110px;
+    width: 35rem;
+}
+
+.price-ada-logo-div{
+    margin-top: 40px;
+
+    position: absolute;
+    top:50%;
+    right: 110px;
+    width: 35rem;
+
+    
+}
+.price-tag{
+    border-radius: 10px;
+    border-width: 10px;
+//    padding: 10px;
+    border: solid;
+    width: 40px;
+    height: 40px;
+    // position: absolute;
+    border-color: #DB2423;
+    margin-left: 32px;
+    background: #DB2423;
+    // back
+    position: absolute;
+    top: 3px;
+
+    // right: 50%;
+}
+.pricetag-image-holder{
+    display: block;
+    margin-left: auto;
+    margin-right: 5px;
+    margin-top: 5px;
+    // width: 50%;
+    // align-self: center;
+}
+
+
+
+.loc-logo-div{
+    margin-top: 10px;
+
+    position: absolute;
+    top:70%;
+    right: 110px;
+    width: 35rem;
+}
+
+.call-header{
+   margin-left:15%;
+   text-align: start;
+   margin-bottom: 0;
+   font-size: 17px;
+   font-weight: bold;
+color: rgb(255, 255, 255);
+}
+
+.call-description{
+    color: rgb(255, 255, 255);
+    margin-left:15%;
+   text-align: start;
+   font-size: 12px;
+
+}
+
+.call-text{
+    // position: absolute;
+}
+
+.call-price{
+    border-radius: 10px;
+    border: solid;
+    
+    // position: absolute;
+    border-color: #DB2423;
+    margin-left: 10px;
+    background: #DB2423;
+    position: absolute;
+    top: 10px;
+    
+}
+.price-logo-div{
+    position: absolute;
+    
+    top:50%;
+    right: 10px;
+
+}
+.map-logo-div{
+    position: absolute;
+    
+    top:75%;
+    right: 10px;
+
+}
