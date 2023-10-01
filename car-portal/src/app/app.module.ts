@@ -11,16 +11,25 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple'
+import { RmHomepageComponent } from './rm-homepage/rm-homepage.component';
+import { CarSubsComponent } from './car-subs/car-subs.component';
+import { HomeCarCollecComponent } from './home-car-collec/home-car-collec.component';
+import { HomeScreenComponent } from './home-screen/home-screen.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CarSubsComponent,
-    HomeCarCollecComponent
+    HomeCarCollecComponent,
+    RmHomepageComponent,
+    CarSubsComponent,
+    HomeCarCollecComponent,
+    HomeScreenComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule,,
     FormsModule,
     ToastModule,
     InputTextareaModule,
