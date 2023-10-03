@@ -159,6 +159,13 @@ img {
     margin-bottom: 2rem;
 }
 
+.radiobtn{
+    height:15px; 
+    width:15px; 
+    vertical-align: middle; 
+    margin-right: 10px;
+}
+
 .rightcard-radio {
     display: flex;
     gap: 10%;
@@ -216,8 +223,21 @@ img {
     color: red;
 }
 
+.fields{
+    margin-top: 12px;
+}
+
 .fields p {
     width: 160px;
+    font-size: 13px; 
+    font-weight: bold; 
+    margin-top: 10px;
+}
+
+.fields input{
+    height: 1.7rem; 
+    margin-top: 10px; 
+    width:40%;
 }
 
 .numbers {
@@ -226,8 +246,8 @@ img {
 }
 
 .numbers button {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
 }
 
 
