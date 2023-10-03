@@ -19,7 +19,8 @@ import { LoginComponent } from './login/login.component';
 import { RmCarCollecComponent } from './rm-homepage/rm-car-collec/rm-car-collec.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WorkspaceComponent } from './workspace/workspace.component';
-import { ProfileSettingsComponent } from './profile-settings/profile-settings.component';
+import { HomeupperpageComponent } from './rm-homepage/homeupperpage/homeupperpage.component';
+import { AfternavbarComponent } from './afternavbar/afternavbar.component';
 
 import { RouterModule } from '@angular/router';
 @NgModule({
@@ -36,8 +37,7 @@ import { RouterModule } from '@angular/router';
     LoginComponent,
     RmCarCollecComponent,
     DashboardComponent,
-    WorkspaceComponent,
-    ProfileSettingsComponent
+    WorkspaceComponent
   ],
   imports: [
     BrowserModule,
