@@ -177,3 +177,19 @@ ul{
     position: absolute;
    
 }
+::placeholder{
+    color:black;
+}
+.anchor:hover{
+    color:red;
+}
+.anchor:focus{
+    color:red;
+}
+// a:hover{
+//     color:red;
+// }
+.anchor{
+    color:black; 
+    text-decoration: underline;
+}

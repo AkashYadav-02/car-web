@@ -13,16 +13,16 @@
         "><img src="..\assets\Setting.png" alt="Icon 1" style="width:20px;height:15px;"><a routerLink="/main-profile"
                 href="#">Profile</a></li>
         <li style="margin-top: 15px;"><img src="..\assets\security-user.png" alt="Icon 1"
-                style="width:20px;height:12px;"> <a href="#">RM Homepage</a></li>
-        <li style="margin-top: 15px;"><img src="..\assets\Ticket.png" alt="Icon 1" style="width:20px;height:12px;"> <a
+                style="width:20px;height:15px;"> <a href="#">RM Homepage</a></li>
+        <li style="margin-top: 15px;"><img src="..\assets\Ticket.png" alt="Icon 1" style="width:20px;height:15px;"> <a
                 href="#">Messages</a></li>
-        <li style="margin-top: 15px;"><img src="..\assets\Document.png" alt="Icon 1" style="width:20px;height:12px;"> <a
+        <li style="margin-top: 15px;"><img src="..\assets\Document.png" alt="Icon 1" style="width:20px;height:15px;"> <a
                 href="#">Purchases</a></li>
-        <li style="margin-top: 15px;"><img src="..\assets\Calendar.png" alt="Icon 1" style="width:20px;height:12px;"> <a
+        <li style="margin-top: 15px;"><img src="..\assets\Calendar.png" alt="Icon 1" style="width:20px;height:15px;"> <a
                 href="#">Returns</a></li>
-        <li style="margin-top: 15px;"><img src="..\assets\Activity.png" alt="Icon 1" style="width:20px;height:12px;"> <a
+        <li style="margin-top: 15px;"><img src="..\assets\Activity.png" alt="Icon 1" style="width:20px;height:15px;"> <a
                 href="#">Gallery</a></li>
-        <li style="margin-top: 15px;"><img src="..\assets\Setting.png" alt="Icon 1" style="width:20px;height:12px;"><a
+        <li style="margin-top: 15px;"><img src="..\assets\Setting.png" alt="Icon 1" style="width:20px;height:15px;"><a
                 routerLink="/profile-settings" href="#">Settings</a></li>
 
     </ul>
@@ -43,8 +43,8 @@
         <a href="#" class="a1">Change Password</a>
     </div>
     <div class="divs">
-        <div class="div2">
-            <form (ngSubmit)="loginUser()" action="">
+        <div class="div2" [formGroup]="userForm" (ngSubmit)="onSubmit()" action="" >
+            <form >
                 <div class="div4">
                     <!-- <form class="form-floating">
                         <input type="email" class="form-control" id="floatingInputValue" placeholder="User Name">
@@ -59,21 +59,25 @@
                         <input type="email" class="form-control" id="floatingInputValue" placeholder="St Bernards Rd Gladstone New Mexico 07934" >
                         <label for="floatingInputValue">Input with value</label>
                       </form> -->
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-3" *ngFor="let user of arr">
                         <input  type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">User Name</label>
+                        <label for="floatingInput">User Name</label> 
+                        <!-- <label for="floatingInput">{{user.name}}</label> -->
                     </div>
-                    <div class="form-floating mb-3">
-                        <input  type="email" class="form-control" id="floatingPassword" placeholder="Password">
+                    <div class="form-floating mb-3" *ngFor="let user of arr">
+                        <input  type="email" class="form-control" id="floatingPassword" placeholder="Password" required>
                         <label for="floatingPassword">Email</label>
+                        <!-- <label for="floatingPassword">{{user.email}}</label> -->
                     </div>
-                    <div class="form-floating mb-3 number-input">
-                        <input  type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                    <div class="form-floating mb-3 number-input" *ngFor="let user of arr">
+                        <input  type="text" class="form-control" id="floatingPassword" placeholder="Password" required>
                         <label for="floatingPassword">Phone No</label>
+                        <!-- <label for="floatingPassword">{{user.phone}}</label> -->
                     </div>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                    <div class="form-floating mb-3" *ngFor="let user of arr">
+                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password" required>
                         <label for="floatingPassword">Address</label>
+                        <label for="floatingPassword">{{user.address}}</label>
                     </div>
                 </div>
             </form>

@@ -1,14 +1,34 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-// import {FormGroup,FormControl,Validators} from '@angular/forms'
+ import {FormGroup,FormControl,Validators} from '@angular/forms'
 // import { from } from 'rxjs';
 @Component({
   selector: 'app-main-profile',
   templateUrl: './main-profile.component.html',
   styleUrls: ['./main-profile.component.scss']
 })
-export class MainProfileComponent {
+export class MainProfileComponent implements OnInit {
+  userForm!:FormGroup;
+  arr:any[]=[{
+    name:'sahil',
+    email:'sahil@gmail.com',
+    phone:'8989898989',
+    address:'kalyan'
+  }];
+
+  
   constructor(private router: Router){}
+    ngOnInit(): void {
+    this.userForm = new FormGroup(
+      {
+        'username': new FormControl(null, [Validators.required, Validators.minLength(2), Validators.pattern('^[a-zA-Z\s]*$'), Validators.maxLength(10)]),
+        'email': new FormControl(null, [Validators.email, Validators.required]),
+        'number': new FormControl(null, [Validators.required]),
+        'address': new FormControl(null, [Validators.required]),
+      }
+    )
+  }
+
   navigateToProfile() {
     this.router.navigate(['/main-profile']);
   }
@@ -20,8 +40,10 @@ export class MainProfileComponent {
     this.router.navigate(['/edit-profile']);
   }
 
-  loginUser(){
+  onSubmit(){
     alert("logged in")
+    console.log(this.userForm);
+    
   }
   
   
