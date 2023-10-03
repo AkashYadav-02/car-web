@@ -19,11 +19,13 @@ import { LoginComponent } from './login/login.component';
 import { RmCarCollecComponent } from './rm-homepage/rm-car-collec/rm-car-collec.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WorkspaceComponent } from './workspace/workspace.component';
+import { ProfileSettingsComponent } from './profile-settings/profile-settings.component';
 
-
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
+    
     CarSubsComponent,
     HomeCarCollecComponent,
     RmHomepageComponent,
@@ -34,11 +36,13 @@ import { WorkspaceComponent } from './workspace/workspace.component';
     LoginComponent,
     RmCarCollecComponent,
     DashboardComponent,
-    WorkspaceComponent
+    WorkspaceComponent,
+    ProfileSettingsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
     FormsModule,
     ReactiveFormsModule,
     ToastModule,
