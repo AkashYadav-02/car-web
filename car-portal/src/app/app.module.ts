@@ -19,6 +19,8 @@ import { LoginComponent } from './login/login.component';
 import { RmCarCollecComponent } from './rm-homepage/rm-car-collec/rm-car-collec.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WorkspaceComponent } from './workspace/workspace.component';
+import { HomeupperpageComponent } from './rm-homepage/homeupperpage/homeupperpage.component';
+import { AfternavbarComponent } from './afternavbar/afternavbar.component';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { WorkspaceComponent } from './workspace/workspace.component';
     LoginComponent,
     RmCarCollecComponent,
     DashboardComponent,
-    WorkspaceComponent
+    WorkspaceComponent,
+    HomeupperpageComponent,
+    AfternavbarComponent
   ],
   imports: [
     BrowserModule,
