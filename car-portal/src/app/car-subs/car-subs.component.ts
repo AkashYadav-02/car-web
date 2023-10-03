@@ -1,11 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+declare var $: any;
 
 @Component({
   selector: 'app-car-subs',
   templateUrl: './car-subs.component.html',
   styleUrls: ['./car-subs.component.scss']
 })
-export class CarSubsComponent {
+export class CarSubsComponent implements OnInit{
+
+  ngOnInit(){
+    $(document).ready(function () {
+      $("#demo").vc3dEye({
+          imagePath: "../../assets/3Dimages/",// the location where you’ve put the images.
+          totalImages: 50,// the number of images you have.
+          imageExtension: "jpg" // the extension of the images. Make sure all the images have same extension.
+      });
+    });
+  }
+  
   isUpperVisible=true
   isLowerVisible=false
   onClick(){

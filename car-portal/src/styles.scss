@@ -1,7 +1,22 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import "node_modules/@fontsource/montserrat";
+@import "node_modules/@fontsource/inter";
 @import "primeng/resources/primeng.css";
 
 .body{
     margin: 0rem;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+  
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);        /* color of the tracking area */
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(211, 0, 0);    /* color of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
+    // border: 2px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
 }

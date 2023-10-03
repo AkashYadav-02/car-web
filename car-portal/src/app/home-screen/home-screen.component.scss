@@ -1,69 +1,32 @@
 .footer {
     background: black;
-    // flex: auto;
-    // position: relative;
     display: flex;
+    padding: 50px 100px;
+    justify-content: space-between;
 }
 
-.footer-download {
-    color: white;
-    margin-left: 5%;
-    float: left;
-    padding: 2%;
+.footer-download{
+    width: 50%;
 }
 
 .google-apple-btn {
     display: flex;
-    // justify-content: flex-end;
-    flex-direction: row;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 100px;
 }
-
-.google-play-store {
-    position: relative;
-    padding-right: 3px;
-}
-
-.google-img-bg,
-.google-img-text {
-    position: absolute;
-    // padding-left: 30px;
-    margin-left: 10px;
-    top: 0;
-    margin-right: 0;
-    left: 0;
-}
-
-
 .apple-btn {
-    //     width: 282.725px;
-    // height: 80px;
-    // flex-shrink: 0;
-
-    width: 212.725px;
+    width: auto;
     height: 62px;
 }
-
-.google-img-bg {
-    width: 207.725px;
-    height: 56px;
-}
-
-.google-img-text {
-    // width: 212.725px;
-    // height: 62px;
-    margin-left: 50px;
-    margin-top: 12px;
-    width: 133.725px;
-    height: 33px;
+.playStore-btn{
+    width: auto;
+    height: 57px;
 }
 
 #footer-description {
     color: rgba(255, 255, 255, 0.80);
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -72,7 +35,7 @@
 #footer-heading {
     color: #FFF;
     font-family: Inter;
-    font-size: 42px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: 46px;
@@ -87,20 +50,15 @@ hr {
 .footer-bottom {
     background: black;
     display: flex;
+    padding: 34px 100px;
     width: auto;
-    // flex-direction: row;
     justify-content: center;
     align-items: center;
-    // gap: 1146px;
 }
 
 .footer-aurion-logo {
     width: 177px;
     height: 45px;
-    flex-shrink: 0;
-    margin-left: 174.5px;
-    margin-top: 34px;
-    margin-bottom: 34px;
 }
 
 .footer-btn {
@@ -114,9 +72,9 @@ hr {
     margin: auto;
 }
 
-.quick-links-footer {
-    margin-right: 197px;
-}
+// .quick-links-footer {
+//     margin-right: 197px;
+// }
 
 .customer-comments {
 
@@ -378,7 +336,6 @@ hr {
 .call-price {
     border-radius: 10px;
     border: solid;
-
     // position: absolute;
     border-color: #DB2423;
     margin-left: 10px;
@@ -398,67 +355,8 @@ hr {
 
 .map-logo-div {
     position: absolute;
-
     top: 75%;
     right: 10px;
-
-}
-
-#car-subs-nav {
-    margin-left: 70px;
-    margin-right: 70px;
-}
-
-.imgg {
-    height: 2.5rem;
-}
-
-.car-subs-location button {
-    width: 11rem;
-    height: 2.5rem;
-    font-weight: 500;
-    background-color: #f4f4f4;
-}
-
-.car-subs-search input {
-
-    background-color: #f4f4f4;
-
-    width: 20rem;
-
-    height: 2.5rem;
-
-}
-
-.label {
-    margin-left: 10px !important;
-}
-
-
-
-.car-subs-search img {
-
-    max-width: 20%;
-
-    max-height: 20%;
-
-}
-
-.vr {
-
-    width: 2px;
-
-    color: black;
-
-}
-
-
-
-.car-subs-logogroup img {
-
-    max-width: 3.5rem;
-
-    max-height: 2.2rem;
 
 }
 
@@ -510,7 +408,6 @@ hr {
     font-size: 10.5rem;
     margin: 0 auto;
     text-align: center;
-    margin-top: 25px;
     color: rgba(255, 255, 255, 0.28);
 }
 
@@ -830,13 +727,10 @@ hr {
 }
 
 .howItWorks {
-    margin: 10px 0px 0px 0px;
     color: #DB2423;
-    font-size: 75.58px;
-    font-family: Inter;
-    font-weight: 700;
-    line-height: 113.36px;
-    word-wrap: break-word;
+    font-size: 50px;
+    font-family: "Inter";
+    font-weight: bolder;
     text-align: center;
     width: 100%;
 }
@@ -937,8 +831,6 @@ hr {
     background-repeat: repeat-x;
     background-position: 390px 51px;
 
-
-
     .col {
         background-color: #fff;
     }
@@ -958,11 +850,10 @@ hr {
 
 .selectByBrand {
     color: black;
-    font-size: 32px;
+    font-size: 22px;
     font-family: Inter;
     font-weight: 600;
-    line-height: 41.60px;
-    word-wrap: break-word
+    flex:auto
 }
 
 .rectangleImage {
@@ -974,15 +865,11 @@ hr {
 .viewAll {
     font-family: Inter;
     font-weight: 600;
-    right: 110px;
-    position: absolute;
     color: red;
     margin-top: 8px;
 }
 
 .rightArrowIcon {
-    right: 78px;
-    position: absolute;
     cursor: pointer;
     margin-top: 7px;
 }
@@ -1032,76 +919,52 @@ hr {
 
 
 .finding-car-btn {
-
     display: flex;
-
     justify-content: space-between;
-
     width: 42rem;
-
     padding: 1rem;
-
     // background: black;
-
-
-
 }
-
-
 
 .finding-car-btn-btn {
-
     // padding-left: 20px
-
     border: solid rgba(0, 0, 0, 0.16);
-
     border-radius: 58px;
-
 }
-
-
 
 .finding-car-btn-btn:hover {
-
     background: black;
-
     color: white;
-
 }
-
-
 
 .row-data {
-
-    // border: solid gray;
-    height: 80px;
-    border: 1px solid rgba(0, 0, 0, 0.40);
+    height: auto;
+    border: 1px solid #eeecec;
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
-
     border-radius: 8px;
-    background: rgba(217, 217, 217, 0.15);
+    background: #F3F3F3;
     text-align: center;
+    padding: 12px 0;
 }
 
-
-
-.row-data-inside-div {
-    background: rgba(217, 217, 217, 0.15);
-    margin: 10px 0;
-}
-.row-data-inside-div p{
+.row-data p{
     margin-bottom: 0;
 }
 
+.row-data img{
+    height: 30px
+}
 
+.row-data:hover{
+    border: 1px solid #838383;
+}
 
 .car-types {
     gap: 1rem;
     font-size: 13px;
 }
 
-
-
 .brands-view-all{
+    margin: 15px -10px;
     display: flex;
 }
