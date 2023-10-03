@@ -16,6 +16,9 @@ import { HomeScreenComponent } from './home-screen/home-screen.component';
 import { TimelineModule } from 'primeng/timeline';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
+import { RmCarCollecComponent } from './rm-homepage/rm-car-collec/rm-car-collec.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { WorkspaceComponent } from './workspace/workspace.component';
 
 
 @NgModule({
@@ -28,7 +31,10 @@ import { LoginComponent } from './login/login.component';
     HomeCarCollecComponent,
     HomeScreenComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    RmCarCollecComponent,
+    DashboardComponent,
+    WorkspaceComponent
   ],
   imports: [
     BrowserModule,
