@@ -1,57 +1,133 @@
-<!-- <div class="vh-100 bg-image" id="background" style="background-image: url('../../assets/images/background.png');   ">
+<div class="mainclass w-full">
 
-</div> -->
-<div class="mainclass">
   <!-- <img src="../../assets/images/background.png"> -->
+
   <div class="childclass1">
+
     <img src="https://s3-alpha-sig.figma.com/img/c259/7a8d/7f9091727584b82529cb60ae7e5e7c81?Expires=1696809600&Signature=BrXvYQjujd7hPBC58a89qabnssdYSVSPRr8x0nHaUKW9X7CiKTkWixkLxSffm2jNnEet45eQHQo5jA8144I7BAqvZtntOS5f4DiDwdb5lnhV-x42IRh3aSj8pk55vPGdx7qWez7VMmGZRRKdgmp5e-R5GEWOB5ZqbCmqq04ds6FsqScnjkfx73ltc1I7ju7RMpjB6MX72M5wkmKmaUjFwPBDY8I8eM9OsRT2ql9F6f1aLpEv8yjVe3kYsc6~t5OVg4l73oNUOeyXkbIMrYJww2roTisTsZSNBLmUrFP5mmw2g04YMVcnfiZ~fwoBoNJpVLJt0CLOnHpap~XL7n9Hjw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
-    <div class="subchild1">
-      <h1>Building the Future...</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<div class="subchild1">
+
+      <h1 >Building the Future...</h1>
+
+      <p>Lorem ipsum dolor sit amet,
+
+      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
     </div>
+
   </div>
-  <div class="childclass2">
-    <p>LETS GET YOU STARTED</p>
-    <h5 style="font-size: 17px; margin-bottom: 7%;">Create an Account</h5>
 
-    <form [formGroup]="register" (ngSubmit)="registerdata(register)">
-      
-     <div class="form-group">
-    <label for="firstname">First Name<span class="required-asterisk">*</span></label>   
-    <input type="text" class="form-control" formControlName="fname" required minlength="2" pattern="[a-zA-Z ]*" placeholder="First Name" >
-   
+   <div class="childclass2 ">
 
-    <label for="lastname">Last Name <span class="required-asterisk">*</span></label>
-    <input type="text" class="form-control form-group required" formControlName="lname" required minlength="2" pattern="[a-zA-Z ]*" placeholder="Last Name">
-    
-    <label for="email">Email<span class="required-asterisk">*</span></label>
-  <input type="email"  class="form-control" formControlName="email" required email  placeholder="Email">
-  
-  <label for="password" >Password<span class="required-asterisk">*</span></label>
-<input type="password"  class="form-control" formControlName="password"  required  placeholder="Password">
+    <p >LETS GET YOU STARTED</p>
+
+    <h3>Create an Account</h3>
+
+    <!-- class="form-group" -->
+    <!-- (ngSubmit)="onSubmit()" -->
+    <form>
+
+   <div >
+
+ 
+
+<label for="firstName">First Name<span class="required-asterisk">*</span></label>
+
+<input type="text" class="form-control" formControlName="fname" required>
+
+ 
+
+<label for="lastName">Last Name<span class="required-asterisk">*</span></label>
+
+<input type="text" class="form-control" formControlName="lname" required>
+
+ 
+
+ 
+
+<label for="email">Email<span class="required-asterisk">*</span></label>
+
+<input type="email"  class="form-control" formControlName="email" required >
+
+ 
 
 <label for="password" >Password<span class="required-asterisk">*</span></label>
-<input type="password"  class="form-control" formControlName="Confirmpassword"  required placeholder="Password">
 
-</div> 
-<div class="form-check">
-  <input class="check-input" type="checkbox" name="termsAndConditions" required>
-  <label class="form-check-label" for="flexCheckDefault">
-    I agree to Terms & Conditions
-  </label>
-</div>
-  <p-toast position="top-center" key="tc"></p-toast>
+<input type="password"  class="form-control" formControlName="password"  required >  
 
-  <button type="submit" class="started btn" (click)="redirectToLoginPage()">Get Started</button>
-  
-      <!-- <button class="started btn"[disabled]="!myForm.form.valid">GET STARTED</button> -->
-      <div><p-divider align="center" type="solid">Or</p-divider></div>
-      <button class="googlee btn btn-google"><img src="../../assets/images/icons8-google.jpg" alt="Google Logo" class="google-logo mr-2">Sign Up with Google</button>
-      <button class="googlee btn btn-google"><img src="../../assets/images/apple.jpg" alt="Google Logo" class="google-logo mr-2">Sign Up with Apple</button>
-      <!-- <span> <a class="fw-bold text-body" routerLink="login">LoginHere</a></span> -->
-      <span>Already have an account? <a  class="fw-bold text-body" routerLink="login">LoginHere</a></span>
-    </form>
+ 
+
+<label for="confirmPassword">Confirm Password<span class="required-asterisk">*</span></label>
+
+<input type="password" class="form-control" formControlName="confirmPassword" required>
+
   </div>
-</div>
 
-<router-outlet></router-outlet>
+  <!-- <button type="submit " class="started btn"  >Login</button> -->
+
+ 
+
+  <div class="form-check text-md">
+
+ 
+
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" formControlName="termsAndConditions">
+
+    <label class="form-check-label termscon" for="exampleCheck1"> I agree to Terms & Conditions</label>
+
+  </div>
+
+ 
+
+  <button type="submit" class="started btn" (click)="onSubmit()" [disabled]="!register.valid">Get Started</button>
+
+   
+
+ 
+
+      <div class="container">
+
+      <div class="row justify-content-center">
+
+      <div class="col-md-5">
+
+           <hr class="my-2">
+
+        </div>
+
+        <div class="col-auto">
+
+         <p class="or-text">or</p>
+
+        </div>
+
+        <div class="col-md-5">
+
+          <hr class="my-2">
+
+        </div>
+
+      </div>
+
+    </div>
+
+ 
+
+ 
+
+      <button class="googlee btn btn-google"><img src="../../assets/images/icons8-google.jpg" alt="Google Logo" class="google-logo mr-2">Sign Up with Google</button>
+
+      <button class="googlee btn btn-google"><img src="../../assets/images/apple.jpg" alt="Apple Logo" class="google-logo mr-2">Sign Up with Apple</button>
+
+      <div class="span">
+        <!-- routerLink='registration' -->
+        <span>Already Have an Account? <a  class="fw-bold text-body" (click)="redirect('user/login')" >Login Here</a></span>
+
+      </div>
+
+    </form>
+
+  </div>
+
+</div>

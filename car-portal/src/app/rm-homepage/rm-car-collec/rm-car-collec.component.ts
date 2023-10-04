@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
+import { RedirectMenuService } from 'src/services/redirect-menu.service';
 
 @Component({
   selector: 'app-rm-car-collec',
@@ -6,6 +9,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./rm-car-collec.component.scss']
 })
 export class RmCarCollecComponent {
+  constructor(private router:Router,private fb: FormBuilder,
+    private redirectMenu : RedirectMenuService,
+     ) {}
   carDetails=[
     {
       name:"Audi A8 L 2022",
@@ -61,6 +67,10 @@ export class RmCarCollecComponent {
     else if (this.heartURL==this.red){
       this.heartURL=this.white
     }
+  }
+
+  redirect(path : string){
+    this.redirectMenu.redirectTo(path);
   }
   
 }

@@ -1,7 +1,11 @@
 import { Component, ViewChild } from '@angular/core';
-import { FormControl, FormGroup, NgForm } from '@angular/forms';
+
+import { FormBuilder, FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
+
 import { MessageService } from 'primeng/api';
+
 import { Router } from '@angular/router';
+import { RedirectMenuService } from 'src/services/redirect-menu.service';
 
 @Component({
   selector: 'app-registration',
@@ -11,45 +15,98 @@ import { Router } from '@angular/router';
 })
 export class RegistrationComponent {
   email:string =''
+
+  fname:string = ''
+
+  lname: string='';
+
   password : string='';
-  fname:string='';
-  lname:string='';
 
-  register: FormGroup|any;
-  myForm: any;
-  
-  
-    constructor(private messageService: MessageService,private router: Router) { }
-    ngOnInit(): void {
-      this.register = new FormGroup({
-      fname : new FormControl(),
-      lname : new FormControl(),
-       email    : new FormControl(),
-       password  :new FormControl(),
-       Confirmpassword : new FormControl(),
-     });
-    }
+  confirmPassword : string='';
 
-    showTopCenter() {
-      this.messageService.add({ key: 'tc', severity: 'success', summary: 'success', detail: 'Registration Successful' });
+  register:FormGroup|any;
+
+  constructor(private router:Router,private fb: FormBuilder,
+    private redirectMenu : RedirectMenuService,
+    ) {}
+
+
+
+  ngOnInit(): void {
+
+
+
+    this.register = this.fb.group({
+
+      fname: ['', [Validators.required, Validators.minLength(2), Validators.pattern('[a-zA-Z ]*')]],
+
+    lname: ['', [Validators.required, Validators.minLength(2), Validators.pattern('[a-zA-Z ]*')]],
+
+        email: ['', [Validators.required, Validators.email]],
+
+      password: ['', [Validators.required]],
+
+      confirmPassword: ['', [Validators.required]],
+
+    termsAndConditions: [false, Validators.requiredTrue],
+
+})
+
+
+
+   }
+
+
+
+   registerdata(){
+
+    console.log(this.register.value);
+
   }
-registerdata(register:FormGroup){
-  console.log(this.register.value);
-}
 
-redirectToLoginPage(){
-  this.router.navigate(['login']);
-}
-  // onSubmit() {
-  //   if (this.myForm && this.myForm.valid) {
-  //     console.log('Form submitted');
-  //     this.showTopCenter();
-  //     this.router.navigate(['/login']);
-  //   }
-  //    else {
-  //     console.log('Please fill in all required fields.');
-      
-  //   }
-  // }
+  redirect(path : string){
+    this.redirectMenu.redirectTo(path);
+  }
+
+
+
+redirectToForgotPassPage(){
+
+  this.router.navigate(['forgot']);
 
 }
+
+
+
+
+
+onSubmit() {
+
+  if (this.register && this.register.valid) {
+
+    console.log('Form submitted');
+
+    this.registerdata();
+
+  }
+
+   else {
+
+    console.log('Please fill in all required fields.');
+
+  }
+
+
+
+}
+
+
+
+}
+
+
+
+
+   
+
+

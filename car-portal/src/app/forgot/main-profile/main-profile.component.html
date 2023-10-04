@@ -5,32 +5,32 @@
 
     <ul>
         <li style="margin-top: 60px;"> <img src="..\assets\Home.png" alt="Icon 1" style="width:20px;height:12px;"> <a
-                href="#">Home</a></li>
-        <!-- <li style="margin-top: 15px;"><img src="..\assets\Vector.png" alt="Icon 1" style="width:20px;height:12px;"> <a routerLink="/profile-sahil"href="#">Profile</a></li> -->
+                >Home</a></li>
+        <!-- <li style="margin-top: 15px;"><img src="..\assets\Vector.png" alt="Icon 1" style="width:20px;height:12px;"> <a routerLink="/profile-sahil">Profile</a></li> -->
         <li style="margin-top: 15px; border-radius: 0px 5px 5px 0px;
         opacity: 0.2;
         background: linear-gradient(90deg, #DB2423 48.95%, rgba(255, 255, 255, 0.171) 91.25%);
         "><img src="..\assets\Setting.png" alt="Icon 1" style="width:20px;height:15px;"><a routerLink="/main-profile"
-                href="#">Profile</a></li>
-        <li style="margin-top: 15px;"><img src="..\assets\security-user.png" alt="Icon 1"
-                style="width:20px;height:12px;"> <a href="#">RM Homepage</a></li>
+                >Profile</a></li>
+        <li (click)="redirect('rm-home-page')" style="margin-top: 15px;"><img src="..\assets\security-user.png" alt="Icon 1"
+                style="width:20px;height:12px;"> <a >RM Homepage</a></li>
         <li style="margin-top: 15px;"><img src="..\assets\Ticket.png" alt="Icon 1" style="width:20px;height:12px;"> <a
-                href="#">Messages</a></li>
+                >Messages</a></li>
         <li style="margin-top: 15px;"><img src="..\assets\Document.png" alt="Icon 1" style="width:20px;height:12px;"> <a
-                href="#">Purchases</a></li>
+                >Purchases</a></li>
         <li style="margin-top: 15px;"><img src="..\assets\Calendar.png" alt="Icon 1" style="width:20px;height:12px;"> <a
-                href="#">Returns</a></li>
+                >Returns</a></li>
         <li style="margin-top: 15px;"><img src="..\assets\Activity.png" alt="Icon 1" style="width:20px;height:12px;"> <a
-                href="#">Gallery</a></li>
+                >Gallery</a></li>
         <li style="margin-top: 15px;"><img src="..\assets\Setting.png" alt="Icon 1" style="width:20px;height:12px;"><a
-                routerLink="/profile-settings" href="#">Settings</a></li>
+                routerLink="/profile-settings" >Settings</a></li>
 
     </ul>
 </div>
 
 <nav>
     <div class="div1">
-        <!-- <h5><img src="..\assets\profile2.png" alt="Icon 1" style="width:20px;height:15px; margin-bottom: 3px; margin-right: 7px;">Profile</h5><a  href="#"class="a1">Change Password</a> -->
+        <!-- <h5><img src="..\assets\profile2.png" alt="Icon 1" style="width:20px;height:15px; margin-bottom: 3px; margin-right: 7px;">Profile</h5><a  class="a1">Change Password</a> -->
         <!-- <router-outlet></router-outlet> -->
         <div class="nav-spacing">
             <button type="button" class="btn btn-outline-light text-dark pro-btn" (click)="navigateToProfile()"><img
@@ -40,7 +40,7 @@
                 (click)="navigateToAccountSettings()"><img src="..\assets\Setting2.png" alt="Icon 1"
                     style="width:20px;height:15px; margin-bottom: 3px; margin-right: 7px;">Account Settings</button>
         </div>
-        <a href="#" class="a1">Change Password</a>
+        <a (click)="redirect('newPass')"  class="a1">Change Password</a>
     </div>
     <div class="divs">
         <div class="div2">

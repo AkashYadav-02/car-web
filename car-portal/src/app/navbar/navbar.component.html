@@ -6,7 +6,7 @@
     </div>
     <ul class="nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active" routerLink="/home" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" (click)="redirect('')" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">About Us</a>
@@ -18,7 +18,7 @@
             <a class="nav-link" aria-current="page" href="#">Services</a>
         </li>
         <li>
-            <button type="button" class="btn btn-danger loginBtn" routerLink="/user/login">Login/Register</button>
+            <button type="button" class="btn btn-danger loginBtn" (click)="redirect('/user/login')" >Login/Register</button>
         </li>
         <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">En<i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></a>

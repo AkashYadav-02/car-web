@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RedirectMenuService } from 'src/services/redirect-menu.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+
+  constructor(
+    private redirectService: RedirectMenuService
+    ){
+
+  }
+
+  redirect(path : string){
+    this.redirectService.redirectTo(path);
+  }
 
 }

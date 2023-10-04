@@ -1,4 +1,4 @@
-<nav id="car-subs-nav" class="navbar bg-body-white py-4 border border-4 border-top-0 border-start-0 border-end-0 ">
+<!-- <nav id="car-subs-nav" class="navbar bg-body-white py-4 border border-4 border-top-0 border-start-0 border-end-0 navbar-default navbar-fixed-top">
     <div>
         <a class="nav-brand" href="#">
             <img class="logoo" src="../../assets/logos/logo.png" alt="Bootstrap">
@@ -35,7 +35,9 @@
         <img src="../../assets/logos/Settings.png" class="px-2">
         <img src="../../assets/logos/Profil.png" class="px-2">
     </div>
-</nav>
+</nav> -->
+<!-- <app-afternavbar></app-afternavbar> -->
+<app-navbar-after-home-page></app-navbar-after-home-page>
 <div class="car-subs">
     <div class="car-subs-header d-flex">
         <p>HOME</p>
@@ -85,8 +87,17 @@
             </div>
 
             <div class="leftcard my-3">
-                <h2>Nissan Maxima Platinum 2022</h2>
-                <p class="mb-5">Engine Capacity 3.5 L/213 . Diesel . Manual</p>
+                <div style="display: flex; justify-content: space-between;">
+                    <div>
+                        <h2>Nissan Maxima Platinum 2022</h2>
+                        <p class="mb-5">Engine Capacity 3.5 L/213 . Diesel . Manual</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <i style="font-size: 30px;" class="fa-regular fa-heart"></i>
+                        <p style="font-size: 13px;">1 Person <br>Shortlisted</p>
+                    </div>
+                </div>
+                
                 <div class="coloraccessories">
                     <div>
                         <h3>Color</h3>
@@ -108,23 +119,22 @@
             <div class="rightcard">
                 <div class="card card-timeline border-0">
                     <ul class="bs4-order-tracking">
-                        <li class="step finished">
-                            <div><i class="fa-solid fa-circle-dot" style="color: #db0000;"></i></div>
-                            Order Placed
-                        </li>
-                        <li class="step active">
-                            <div><i class="fas fa-bread-slice"></i></div>
-                            In transit
+                        <li class="step">
+                            <div><i class="fa-solid fa-circle-dot" style="color: #db0000; font-size: 16px;"></i></div>
+                            <p>Build Car</p>
                         </li>
                         <li class="step">
-                            <div><i class="fas fa-truck"></i></div>
-                            Out for delivery
+                            <div><i class="fa-solid fa-2" style="color: gray;"></i></div>
+                            <p>Personal Info</p>
+                        </li>
+                        <li class="step">
+                            <div><i class="fa-solid fa-3" style="color: gray;"></i></div>
+                            <p>Payment</p>
                         </li>
                     </ul>
                 </div>
-                
-                <hr>
-                <p style="font-size: 18px; font-weight: bold;" (click)="onClick()">Subscription Type</p>
+                <hr style="margin-top: 0rem;">
+                <p class="lc-header"  (click)="onClick()">Subscription Type<i class="fa-solid" [class.fa-angle-down]="isUpperVisible" [class.fa-angle-up]="!isUpperVisible"></i></p>
                 <div [style.display]="isUpperVisible ? 'inherit' : 'none'"
                     [style.height]="isUpperVisible ? 'fit-content' : '0'">
                     <div class="leasehire form-check form-check-inline" style="margin-left: -21px;">
@@ -136,14 +146,14 @@
                         <label class="form-check-label" for="inlineRadio2">Hire Purchase</label>
                     </div>
 
-                    <p class='subhead'>Tenure</p>
+                    <p class='subhead'>Tenure <span class="text-secondary">(Months)</span></p>
                     <div class="numbers">
-                        <button class="btn btn-secondary border border-2 border-danger">24</button>
-                        <button class="btn btn-secondary border border-2 border-danger">36</button>
-                        <button class="btn btn-secondary border border-2 border-danger">48</button>
-                        <button class="btn btn-secondary border border-2 border-danger">60</button>
-                        <button class="btn btn-secondary border border-2 border-danger">72</button>
-                        <button class="btn btn-secondary border border-2 border-danger">84</button>
+                        <button class="btn btn-white border border-2 border-secondary">24</button>
+                        <button class="btn btn-white border border-2 border-secondary">36</button>
+                        <button class="btn btn-white border border-2 border-secondary">48</button>
+                        <button class="btn btn-white border border-2 border-secondary">60</button>
+                        <button class="btn btn-white border border-2 border-secondary">72</button>
+                        <button class="btn btn-white border border-2 border-secondary">84</button>
                     </div>
 
 
@@ -184,7 +194,7 @@
                     </div>
                 </div>
                 <hr>
-                <p style="font-size: 18px; font-weight: bold;" (click)="onPress()">Eligibility</p>
+                <p class="lc-header"  (click)="onPress()">Eligibility<i class="fa-solid" [class.fa-angle-down]="isLowerVisible" [class.fa-angle-up]="!isLowerVisible"></i></p>
                 <div [style.display]="isLowerVisible ? 'inherit' : 'none'"
                     [style.height]="isLowerVisible ? 'fit-content' : '0'">
                     <div class="form-check form-check-inline" style="margin-left: -18px;">
@@ -226,8 +236,36 @@
                         <h5 style="font-weight: bolder;">RESULT : <span class="text"
                                 style="color: rgb(0, 197, 13);">ELIGIBLE</span></h5>
                     </div>
+                    <h6 style="color: #db0000;"><b><U>SWITCH MODEL</U></b></h6>
+                    <div style="display: flex; gap: 10px;">
+                        <div class="small-card">
+                            <img src="../../assets/car1.png">
+                        </div>
+                        <div class="small-card">
+                            <img src="../../assets/car2.png">
+                        </div>
+                        <div class="small-card">
+                            <img src="../../assets/car3.png">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div class="car-subs-footer">
+    <div class="cs-footer-com">
+        <h6 class="redtxt">PRICE DETAILS</h6>
+        <h6 class="price">$20000</h6>
+        <h6 style="font-size: 12px; margin-top: 2.5px;">Fixed on road price</h6>
+    </div>
+    <div class="cs-footer-com">
+        <h6 class="price">$0,000/m</h6>
+        <i></i>
+        <h6 class="redtxt">View Benefits</h6>
+    </div>
+    <div class="cs-footer-com">
+        <button class="btn">Apply Now</button>
+    </div>
+
 </div>

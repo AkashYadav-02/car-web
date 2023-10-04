@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
 
 @Component({
@@ -8,10 +9,13 @@ import { MessageService } from 'primeng/api';
   providers: [MessageService]
 })
 export class AppComponent {
-  constructor(private messageService: MessageService){}
+  constructor(private messageService: MessageService,
+    private router: Router
+    ){}
   title = 'car-portal';
 
-  showToast(){
-    this.messageService.add({  key: 'bc',severity: 'warn', summary: 'Warn', detail: 'Message Content' });
-  }
+  // ngOnInit(){
+  //   this.router.navigate(['']);
+  // } 
+
 }

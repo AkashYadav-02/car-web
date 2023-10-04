@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { RedirectMenuService } from 'src/services/redirect-menu.service';
 
 @Component({
   selector: 'app-edit-profile',
@@ -7,7 +8,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./edit-profile.component.scss']
 })
 export class EditProfileComponent {
-  constructor(private router: Router){}
+  constructor(private router: Router,
+    private redirectMenu : RedirectMenuService,){}
+
+
+
   navigateToProfile() {
     this.router.navigate(['/main-profile']);
   }
@@ -18,4 +23,11 @@ export class EditProfileComponent {
   navigateToEditProfile() {
     this.router.navigate(['/edit-profile']);
   }
+
+
+  redirect(path : string){
+    this.redirectMenu.redirectTo(path);
+  }
 }
+
+

@@ -19,7 +19,13 @@ import { LoginComponent } from './login/login.component';
 import { RmCarCollecComponent } from './rm-homepage/rm-car-collec/rm-car-collec.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WorkspaceComponent } from './workspace/workspace.component';
-
+import { NavbarAfterHomePageComponent } from './navbar-after-home-page/navbar-after-home-page.component';
+import { HomePageAfterComponent } from './home-page-after/home-page-after.component';
+import { VarificationLoginComponent } from './varification-login/varification-login.component';
+// import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
+import { AgGridModule } from 'ag-grid-angular';
+import { HomepageUpperComponent } from './rm-homepage/homepage-upper/homepage-upper.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +40,11 @@ import { WorkspaceComponent } from './workspace/workspace.component';
     LoginComponent,
     RmCarCollecComponent,
     DashboardComponent,
-    WorkspaceComponent
+    WorkspaceComponent,
+    NavbarAfterHomePageComponent,
+    VarificationLoginComponent,
+    HomePageAfterComponent,
+    HomepageUpperComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +56,10 @@ import { WorkspaceComponent } from './workspace/workspace.component';
     BrowserAnimationsModule,
     ButtonModule,
     RippleModule,
-    TimelineModule
+    TimelineModule,
+    AgGridModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
