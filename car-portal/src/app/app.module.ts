@@ -33,6 +33,7 @@ import { HomeupperpageComponent } from './rm-homepage/homeupperpage/homeupperpag
 import { AfternavbarComponent } from './afternavbar/afternavbar.component';
 
 import { RouterModule } from '@angular/router';
+import { MainProfileComponent } from './forgot/main-profile/main-profile.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { RouterModule } from '@angular/router';
     HomePageAfterComponent,
     HomepageUpperComponent,
     FooterComponent,
+    MainProfileComponent
   ],
   imports: [
     BrowserModule,
