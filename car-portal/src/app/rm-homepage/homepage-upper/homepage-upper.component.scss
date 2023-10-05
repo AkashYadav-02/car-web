@@ -52,6 +52,14 @@
     margin: 0 auto;
     text-align: center;
     color: rgba(255, 255, 255, 0.28);
+    color: rgba(255, 255, 255, 0.1);
+    font-family: Monts;
+    font-size: 12rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 5rem;
+    text-transform: uppercase;
 }
 
 // .firstDiv{
@@ -373,10 +381,10 @@
     float: left;
     position: relative;
     margin-left: 4rem;
-    margin-top: -11rem;
+    margin-top: -18rem;
     text-align: center;
     width: 31rem;
-    background: linear-gradient(120deg, #FFF -88.77%, rgba(255, 255, 255, 0.47) -57.3%, rgba(255, 255, 255, 0.30) -15.2%, rgba(255, 255, 255, 0.00) 103.83%);
+    background: linear-gradient(120deg, #ffffff7c -88.77%, rgba(255, 255, 255, 0.267) -57.3%, rgba(255, 255, 255, 0.151) -15.2%, rgba(255, 255, 255, 0.00) 103.83%);
     backdrop-filter: blur(14.5px);
     height: 42rem;
 
@@ -528,7 +536,7 @@ line-height: 125.688%; /* 30.165px */
 .car-names-list {
     justify-content: flex-end;
     font-size: 0.65rem;
-    margin-top: 27rem;
+    margin-top: 19rem;
     margin-right: 2rem;
     // position: relative;
     color: rgba(255, 255, 255, 0.64);
