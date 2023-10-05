@@ -1,29 +1,16 @@
 .mainclass {
-
   width: 100vw;
-
   height: 100vh;
-
-  background-color: aqua;
-
+  // background-color: aqua; 
   z-index: -1;
-
   position: absolute;
-
   background-image: url(../../assets/login_image/background.png);
-
   background-size: 100% 100%;
-
   // background-repeat: no-repeat;
-
   display: flex;
-
   gap: 12%;
-
   padding-left: 10rem;
-
   padding-right: 10rem;
-
 }
 
 .childclass1 {
@@ -33,10 +20,8 @@
 }
 
 .childclass1 img {
-
   height: 51%;
   width: 50%;
-
 }
 
 .subchild1 {
