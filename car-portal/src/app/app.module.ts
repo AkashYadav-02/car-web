@@ -26,6 +26,7 @@ import { VarificationLoginComponent } from './varification-login/varification-lo
 import { HttpClientModule } from '@angular/common/http'
 import { AgGridModule } from 'ag-grid-angular';
 import { HomepageUpperComponent } from './rm-homepage/homepage-upper/homepage-upper.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { HomepageUpperComponent } from './rm-homepage/homepage-upper/homepage-up
     VarificationLoginComponent,
     HomePageAfterComponent,
     HomepageUpperComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

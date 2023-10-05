@@ -15,7 +15,7 @@
 }
 
 img {
-  height: 2.5rem;
+  // height: 2.5rem;
 }
 
 .navbar-logos {
@@ -51,7 +51,7 @@ img {
   // margin-right: 10px;
   margin-top: 1px;
   color: #c9d6df;
-  font-family: Montserrat;
+  font-family: Monts;
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
@@ -67,6 +67,7 @@ img {
   padding-right: 10px;
   // margin-left: 10px;
 }
+
 .navbar-drop-arrow {
   margin-top: 6px;
   width: 16px;
@@ -104,6 +105,8 @@ img {
   border: solid #d9d9d9;
   // height: 450px;
   padding: 10px;
+  margin-right: 1.8rem;
+  margin-left: 1.8rem;
   // height: 350px;
 }
 
@@ -114,8 +117,11 @@ img {
   font-size: 33px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 52px */
+  line-height: 130%;
+  /* 52px */
   letter-spacing: -0.8px;
+  // padding: 1rem 0rem;
+  // padding-bottom: 4rem;
 }
 
 .first-card {
@@ -131,7 +137,10 @@ img {
   font-size: 22px;
   font-style: normal;
   font-weight: 800;
-  line-height: 150%; /* 36px */
+  line-height: 150%;
+  /* 36px */
+  padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 
 .card-img-top {
@@ -158,10 +167,21 @@ img {
 
 .car-name {
   width: 200px;
+  color: #FFF;
+  font-family: Monts;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  /* 36px */
 }
 
 .list-group {
   margin: -13px;
+}
+
+.car-name-logo-list {
+  margin-left: 0.3rem;
 }
 
 .car-name-side-ele {
@@ -178,13 +198,22 @@ img {
 }
 
 #png1 {
-  margin-left: -124px;
+  margin-left: -7.5rem;
 }
 
 .car-name-side-ele-text {
-  font-size: 14px;
+  // font-size: 14px;
   word-spacing: 1px;
   padding-left: 1px;
+  color: #D9D9D9;
+  font-family: Montserrat;
+  font-size: 0.6rem;
+  margin: auto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  /* 21px */
+  letter-spacing: -0.28px;
 }
 
 .car-price-text {
@@ -198,7 +227,7 @@ img {
 
 .car-price-offer-text {
   color: #d9d9d9;
-  font-family: Plus Jakarta Sans;
+  font-family: PJSans;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -208,7 +237,7 @@ img {
 
 .sub-string {
   color: #d9d9d9;
-  font-family: Plus Jakarta Sans;
+  font-family: PJSans;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -310,8 +339,9 @@ img {
 }
 
 .filter-item {
-  border: solid rgb(214, 200, 173);
+  // border: solid rgb(214, 200, 173);
   // padding: 20px;
+  border: 0.8px solid #D9D9D9;
   margin-left: 10px;
   background: white;
   text-decoration: none;
@@ -333,7 +363,7 @@ img {
 }
 
 .cross-icon {
-  background: url("../icons/Layer 2.png");
+  background: url("../icons/plus-icon.png");
   background-position: 30%;
   // transform: rotate(0deg);
   // align-items: end;
@@ -396,6 +426,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   // border-radius:12px;
   // overflow: hidden;
 }
+
 input[type="range"]::-webkit-slider-thumb {
   background: #ff0000;
   border-radius: 10px;
@@ -410,6 +441,7 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]::-webkit-slider-runnable-track {
   background: #ffffff;
 }
+
 input[type="range"]::-webkit-slider-runnable-track {
   background: #777777;
 }
@@ -442,7 +474,8 @@ input[type="range"]::-webkit-slider-runnable-track {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 27px */
+  line-height: 150%;
+  /* 27px */
 }
 
 .third-card {
@@ -467,7 +500,8 @@ input[type="range"]::-webkit-slider-runnable-track {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 150%; /* 30px */
+  line-height: 150%;
+  /* 30px */
   width: 100%;
   cursor: pointer;
   text-align: center;
@@ -477,6 +511,17 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 .third-card-headers-hover-effect:hover {
   color: #db2423;
+
+}
+
+.third-card-headers-hover-effect {
+  // color: #DB2423;
+  font-family: Inter;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  /* 30px */
 }
 
 .third-card-purchase-price {
@@ -527,6 +572,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   // padding-left: 20px
   border: solid rgba(0, 0, 0, 0.16);
   border-radius: 58px;
+  width: 9.3rem;
 }
 
 .finding-car-btn-btn:hover {
@@ -547,8 +593,6 @@ input[type="range"]::-webkit-slider-runnable-track {
   text-align: center;
 }
 
-.row-data-inside-data {
-}
 
 .car-types {
   gap: 1rem;
@@ -561,7 +605,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 .footer {
   background: black;
-
+  height: 13rem;
   // flex: auto;
 
   // position: relative;
@@ -571,8 +615,8 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 .footer-download {
   color: white;
-
-  margin-left: 5%;
+  margin-top: 2rem;
+  margin-left: 5rem;
 
   float: left;
 
@@ -581,16 +625,10 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 .google-apple-btn {
   display: flex;
-
-  // justify-content: flex-end;
-
   flex-direction: row;
-
-  margin-top: auto;
-
+  margin-top: 5rem;
   margin-bottom: auto;
-
-  margin-left: 100px;
+  margin-left: 3rem;
 }
 
 .google-play-store {
@@ -647,32 +685,22 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 #footer-description {
-  color: rgba(255, 255, 255, 0.8);
-
+  color: rgba(255, 255, 255, 0.80);
   font-family: Montserrat;
-
-  font-size: 24px;
-
+  font-size: 1.2rem;
   font-style: normal;
-
   font-weight: 400;
-
   line-height: normal;
 }
 
 #footer-heading {
   color: #fff;
-
   font-family: Inter;
-
-  font-size: 42px;
-
+  font-size: 1.8rem;
   font-style: normal;
-
   font-weight: 700;
-
   line-height: 46px;
-
+  margin-bottom: 0.2rem;
   /* 109.524% */
 }
 
@@ -686,7 +714,7 @@ hr {
   background: black;
 
   display: flex;
-
+  height: 5rem;
   width: auto;
 
   // flex-direction: row;
@@ -699,16 +727,11 @@ hr {
 }
 
 .footer-aurion-logo {
-  width: 177px;
-
-  height: 45px;
-
+  width: 8rem;
+  height: 2rem;
   flex-shrink: 0;
-
-  margin-left: 174.5px;
-
+  margin-left: 9rem;
   margin-top: 34px;
-
   margin-bottom: 34px;
 }
 
@@ -718,6 +741,16 @@ hr {
   border: 0;
 
   background: none;
+  color: var(--text-gray-300, #D9DBE1);
+  // font-feature-settings: 'salt'on, 'liga'off;
+  font-family: Inter;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0rem 1rem;
+
+  /* 120% */
 }
 
 .footer-btn-group {
@@ -727,7 +760,9 @@ hr {
 }
 
 .quick-links-footer {
-  margin-right: 197px;
+  height: 2rem;
+  width: 11rem;
+  margin-right: 8rem;
 }
 
 
