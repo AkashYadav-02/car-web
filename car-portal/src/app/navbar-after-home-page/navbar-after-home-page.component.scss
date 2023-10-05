@@ -1,47 +1,26 @@
 #car-subs-nav {
-
     // margin-left: 65px;
-
     // margin-right: 65px;
-
     position: fixed;
-
     width: 90%;
-
     left: 50%;   // align items at center in fixed position
-
     transform: translate(-50%, 0%); // align items at center in fixed position
-
     z-index: 10;
-
     color: white;
-
+    background-color: aqua;
 }
 
- 
-
 .sidebar{
-
     display: flex;
-
     position: absolute;
-
     background-color: black;
-
     width: 15%;
-
     height: 25rem;
-
     //margin-top: 80px;
-
     //margin-left:70px;
-
     margin-top: 25px;
-
     margin-left: -1px;
-
     z-index: 1;
-
 }
 
 .anchor{

@@ -1,45 +1,27 @@
-<nav id="car-subs-nav" class="navbar bg-body-white py-3 border border-1 border-top-0 border-start-0 border-end-0 ">
+<nav id="car-subs-nav" class="navbar py-3 border border-1 border-top-0 border-start-0 border-end-0 "
+[style.background-color]="bgcolor">
 
     <div>
-
         <a class="nav-brand" >
-
-            <img src ="../assets/Group 1000006805.png" height="20px" width="25px" class="expand" (click)="expandSideBar()">
-
-            <img class="imgg" src="../../assets/Aurionpro.png" alt="Bootstrap">
-
+            <img src ={{sideburger}} height="20px" width="25px" class="expand" (click)="expandSideBar()" style="margin-top: 6px;">
+            <img class="imgg" src={{aurologo}} alt="Bootstrap">
         </a>
 
         <div class="sidebar" [style.display]="isExpand ? 'inherit' : 'none'">
-
             <!-- <img class="img3" src="..\assets\b494ahn2td2ykcqak6hr_1-removebg-preview 1.png" alt="img"
-
               style="width:150px;height:40px;">
-
            -->
-
             <ul class="ul1">
-
               <li style="margin-top: 25px;"> <img src="..\assets\Home.png" alt="Icon 1" style="width:20px;height:12px;"> <a
-
                  class="anchor">Home</a></li>
-
               <li style="margin-top: 20px;"><img src="../../assets/Profiles.png" alt="Icon 1" style="width:20px;height:12px;"> 
-               
-
                 <!-- routerLink="/main-profile" -->
                 <a class="anchor" (click)="redirect('main-profile')">Profile</a></li>
-
               <li style="margin-top: 20px;"><img src="..\assets\security-user.png" alt="Icon 1" style="width:20px;height:15px;">
-
                 <a class="anchor" (click)="redirect('rm-home-page')" >RM Homepage</a></li>
-
               <li style="margin-top: 20px;"><img src="..\assets\Ticket.png" alt="Icon 1" style="width:20px;height:15px;"> <a
-
                 class="anchor">Messages</a></li>
-
               <li style="margin-top: 20px;"><img src="..\assets\Document.png" alt="Icon 1" style="width:20px;height:15px;"> <a
-
                 class="anchor">Purchases</a></li>
 
               <li style="margin-top: 20px;"><img src="..\assets\Calendar.png" alt="Icon 1" style="width:20px;height:15px;"> <a
@@ -62,60 +44,52 @@
 
     </div>
 
-    <ul class="nav justify-content-end">
+    <ul class="nav justify-content-end" style="margin-right: -180px;">
 
         <li class="nav-item">
 
-          <a class="nav-link active" routerLink="/home" aria-current="page">Home</a>
+          <a class="nav-link active" routerLink="/home" aria-current="page" [style.color]="txtcolor">Home</a>
 
         </li>
 
         <li class="nav-item">
 
-            <a class="nav-link" aria-current="page">About Us</a>
+            <a class="nav-link" aria-current="page" [style.color]="txtcolor">About Us</a>
 
         </li>
 
         <li class="nav-item">
 
-            <a class="nav-link" aria-current="page">Cars</a>
+            <a class="nav-link" aria-current="page" [style.color]="txtcolor">Cars</a>
 
         </li>
 
         <li class="nav-item">
 
-            <a class="nav-link" aria-current="page">Services</a>
+            <a class="nav-link" aria-current="page" [style.color]="txtcolor">Services</a>
 
         </li>
 
         <li class="nav-item">
 
-            <a class="nav-link" aria-current="page" (click)="redirect('work-space')" >My Workspace</a>
+            <a class="nav-link" aria-current="page" (click)="redirect('work-space')" [style.color]="txtcolor">My Workspace</a>
 
         </li>
 
         <li>
 
             <div class="car-subs-logogroup">
-
-                <img src="../../assets/Like.png" class="px-2">
-
-                <img src="../../assets/notification.png" class="px-2">
-
-                <img src="../../assets/Settings.png" class="px-2">
-
+                <img src={{like}} class="px-2">
+                <img src={{noti}} class="px-2">
+                <img src={{sett}} class="px-2">
                 <img src="../../assets/Profiles2.png" class="px-2">
-
             </div>
-
         </li>
 
         <li class="nav-item">
-
-            <a class="nav-link" aria-current="page">En<i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></a>
-
+            <a class="nav-link" aria-current="page" [style.color]="txtcolor">En<i class="fa-solid fa-angle-down" [style.color]="txtcolor"></i></a>
         </li>
 
     </ul>
-
+    <hr>
 </nav>
