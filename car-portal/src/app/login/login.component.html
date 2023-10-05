@@ -1,22 +1,16 @@
 <div class="mainclass w-full">
 
- 
-
-  <!-- <img src="../../assets/images/background.png"> -->
-
-
 
   <div class="childclass1">
 
-    <img src="https://s3-alpha-sig.figma.com/img/c259/7a8d/7f9091727584b82529cb60ae7e5e7c81?Expires=1696809600&Signature=BrXvYQjujd7hPBC58a89qabnssdYSVSPRr8x0nHaUKW9X7CiKTkWixkLxSffm2jNnEet45eQHQo5jA8144I7BAqvZtntOS5f4DiDwdb5lnhV-x42IRh3aSj8pk55vPGdx7qWez7VMmGZRRKdgmp5e-R5GEWOB5ZqbCmqq04ds6FsqScnjkfx73ltc1I7ju7RMpjB6MX72M5wkmKmaUjFwPBDY8I8eM9OsRT2ql9F6f1aLpEv8yjVe3kYsc6~t5OVg4l73oNUOeyXkbIMrYJww2roTisTsZSNBLmUrFP5mmw2g04YMVcnfiZ~fwoBoNJpVLJt0CLOnHpap~XL7n9Hjw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
-
+    <img
+      src="https://s3-alpha-sig.figma.com/img/c259/7a8d/7f9091727584b82529cb60ae7e5e7c81?Expires=1696809600&Signature=BrXvYQjujd7hPBC58a89qabnssdYSVSPRr8x0nHaUKW9X7CiKTkWixkLxSffm2jNnEet45eQHQo5jA8144I7BAqvZtntOS5f4DiDwdb5lnhV-x42IRh3aSj8pk55vPGdx7qWez7VMmGZRRKdgmp5e-R5GEWOB5ZqbCmqq04ds6FsqScnjkfx73ltc1I7ju7RMpjB6MX72M5wkmKmaUjFwPBDY8I8eM9OsRT2ql9F6f1aLpEv8yjVe3kYsc6~t5OVg4l73oNUOeyXkbIMrYJww2roTisTsZSNBLmUrFP5mmw2g04YMVcnfiZ~fwoBoNJpVLJt0CLOnHpap~XL7n9Hjw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
     <div class="subchild1">
-
       <h1>Building the Future...</h1>
 
       <p>Lorem ipsum dolor sit amet,
 
-      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
     </div>
 
@@ -24,81 +18,80 @@
 
   <div class="childclass2">
 
-    <p >LETS GET YOU STARTED</p>
+    <p>LETS GET YOU STARTED</p>
 
     <h5>Sign In</h5>
 
 
-
     <form [formGroup]="login" (ngSubmit)="onSubmit()">
 
-      <div class="form-group">
+      <div class="form-group container1">
+        <div class="did-floating-label-content label-input">
+          <input class="did-floating-input " formControlName="email" type="text" placeholder="Email">
+          <label class="did-floating-label">Email</label>
+        </div>
+
+        <div class="did-floating-label-content label-input">
+          <input class="did-floating-input" type="password" formControlName="password" placeholder="*********">
+          <label class="did-floating-label">Password</label>
+        </div>
 
 
+      </div>
 
-    <label for="email">Email<span class="required-asterisk">*</span></label>
-
-
-
-    <input type="email"  class="form-control" formControlName="email" required >
-
-   <label for="password" >Password<span class="required-asterisk">*</span></label>
-
-   <input type="password"  class="form-control" formControlName="password"  required  >
-
-
-
-  </div>
-
-      <div style="cursor: pointer;" >
+      <div style="cursor: pointer;">
         <!-- href="#!"routerLink="forgot" -->
-      <a (click)="redirect('forget')">Forgot Password?</a>
+        <a (click)="redirect('forget')" style="font-family: Monts; font-weight:500">Forgot Password?</a>
 
       </div>
 
       <!-- <button type="submit " class="started btn"  >Login</button> -->
 
-      <button type="submit" class="started btn" (click)="onSubmit()" [disabled]="!login.valid">Login</button>
+      <button type="submit" class="started btn" style="font-family: Monts" (click)="onSubmit()" [disabled]="!login.valid">Login</button>
 
 
 
-    <div class="container">
+      <div class="container">
 
-      <div class="row justify-content-center">
+        <div class="row justify-content-center">
 
-        <div class="col-md-5">
+          <div class="col-md-5">
 
-          <hr class="my-4">
+            <hr class="my-4">
+
+          </div>
+
+          <div class="col-auto">
+
+            <p class="or-text mt-3"   style="   font-family: Monts">Or</p>
+
+          </div>
+
+          <div class="col-md-5">
+
+            <hr class="my-4">
+
+          </div>
 
         </div>
 
-        <div class="col-auto">
 
-          <p class="or-text mt-3">Or</p>
-
-        </div>
-
-        <div class="col-md-5">
-
-          <hr class="my-4">
-
-        </div>
 
       </div>
 
+      <button class="googlee btn btn-google mt-3"><img src="../../assets/login_image/google.png" alt="Google Logo"
+          class="google-logo mr-2">Sign Up with Google</button>
+
+      <button class="googlee btn btn-google"><img src="../../assets/login_image/apple.jpg" alt="Apple Logo"
+          class="google-logo mr-2" >Sign Up with Apple</button>
+
+      <div class="span dont-register">
 
 
-    </div>
-
-      <button class="googlee btn btn-google mt-3"><img src="../../assets/login_image/google.png" alt="Google Logo" class="google-logo mr-2">Sign Up with Google</button>
-
-      <button class="googlee btn btn-google"><img src="../../assets/login_image/apple.jpg" alt="Apple Logo" class="google-logo mr-2">Sign Up with Apple</button>
-
-<div class="span">
-
-
-  <!-- routerLink='register' -->
-        <span>Don't Have an Account? <a  class="fw-bold text-body" (click)="redirect('registration')" >RegisterHere</a></span>
+        <!-- routerLink='register' -->
+        <span  style="   font-family: Monts">Don't Have an Account?</span> &nbsp; <span> <a class="fw-bold text-body"
+         style="   font-family: Monts"
+            (click)="redirect('registration')" >RegisterHere</a></span>
 
 
 

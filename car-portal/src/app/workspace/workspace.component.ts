@@ -2,7 +2,7 @@ import { Component} from '@angular/core';
 import { ColDef } from 'ag-grid-community';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-
+import { AgGridModule } from 'ag-grid-angular';
 
 @Component({
   selector: 'app-workspace',

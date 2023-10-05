@@ -28,6 +28,12 @@ import { AgGridModule } from 'ag-grid-angular';
 import { HomepageUpperComponent } from './rm-homepage/homepage-upper/homepage-upper.component';
 import { FooterComponent } from './footer/footer.component';
 
+
+import { HomeupperpageComponent } from './rm-homepage/homeupperpage/homeupperpage.component';
+import { AfternavbarComponent } from './afternavbar/afternavbar.component';
+
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent,

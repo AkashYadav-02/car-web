@@ -1,5 +1,4 @@
-
-.mainclass{
+.mainclass {
 
   width: 100vw;
 
@@ -25,338 +24,359 @@
 
   padding-right: 10rem;
 
-  }
+}
+
+.childclass1 {
 
- 
+  position: relative;
+
+  width: 50%;
+}
 
-  .childclass1{
+.childclass1 img {
+
+  height: 51%;
+  width: 50%;
 
-    position: relative;
 
-    width: 50%;
 
- 
+}
 
-  }
+.subchild1 {
 
- 
+  margin-top: -130px;
 
-  .childclass1 img{
+  margin-left: 2rem;
+}
 
-    height: 51%;
+.subchild1 h1 {
 
-    display: flex;
+  font-size: 32px;
 
-   
+  color: white;
 
-  }
+  // display: flex;
 
- 
+  // font-display: flex;
 
-  .subchild1{
+}
 
-    margin-top: -130px;
+.subchild1 p {
+  margin-top: 2%;
+  width: 60%;
+  font-size: 12px;
+  color: #D9D9D9;
+}
 
-    margin-left: 2rem;
+.childclass2 {
+  margin-top: 5%;
+  border-radius: 10px;
+  position: relative;
+  width: 36%;
+  height: fit-content;
+  padding: 1rem 2rem;
+  background-color: white;
+}
+.arow{
+  // margin-bottom: rem;
+  margin-top: -6.1rem;
+  // margin-bottom: 3rem;
+  display: flex;
+}
+.header{
+  margin-top: 1.5rem;
+  margin-left: 90px;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
 
-   
+img{
+  margin-top: 60px;
+  margin-left: 30px;
+  height: 15px;
+  width: 15px;
+}
 
-  }
 
- 
+.form-group{
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: small;
+  font-family: "Inter";
+}
 
-  .subchild1 h1{
+#email{
+  margin-left: 30px;
+  font-family: "Montserrat";
+  font-size: 11px;
+}
 
-    font-size: 32px;
+#signin{
+  margin-left: 115px;
+  color: #ABABAB;
+  font-family: "Montserrat";
+  font-weight: normal;
+}
 
-    color: white;
+#sendbutton{
+  height: 50px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 15px;
+}
 
-    // display: flex;
+.container{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
-    // font-display: flex;
+.col-auto{
+  // font-weight: 100;
+  color: #000;
+}
 
-  }
 
- 
+.childclass2 p {
+  color: #000;
 
-  .subchild1 p{
+  font-size: 10px;
 
-    margin-top: 2%;
+  font-style: normal;
 
-    width: 60%;
+  font-weight: 400;
 
-    font-size: 12px;
+  // line-height: 22.53px;
 
-    color: #D9D9D9;
+  margin-top: 5%;
 
-  }
+  margin-bottom: 1%;
 
-  .childclass2{
+}
 
-    margin-top: 5%;
 
-    border-radius: 10px;
 
-    position: relative;
+.p-float-label {
 
-    width: 43%;
+  padding-top: 0.2rem;
 
-    height: 91vh;
+  padding-bottom: 0.2rem;
 
-    padding: 1rem 2rem;
+  margin-bottom: 0.2rem;
 
-    background-color: white;
+  position: relative;
 
-  }
+  margin-top: 0.6rem;
 
- 
+  font-size: 15px;
 
-  .childclass2 p{
+}
 
-    color: #000;
 
-    font-size: 10px;
 
-    font-style: normal;
+.p-float-label input {
 
-    font-weight: 400;
+  padding: 8px 8px;
 
-    // line-height: 22.53px;
+  border: 1px solid #BDBDBD;
 
-    margin-top: 5%;
+  border-radius: 8px;
 
-    margin-bottom: 1%;
+}
 
-  }
 
- 
 
-  .p-float-label  {
+.form-check {
 
-    padding-top: 0.2rem;
+  font-size: 90%;
 
-    padding-bottom: 0.2rem;
+  color: red;
 
-    margin-bottom: 0.2rem;
+  padding-left: 0;
 
-    position: relative;
+}
 
-    margin-top: 0.6rem;
 
-    font-size: 15px;
 
-  }
+.form-check-label {
 
- 
+  font-size: 80%;
 
-  .p-float-label input {
+  vertical-align: middle;
 
-    padding: 8px 8px;
+}
 
-    border: 1px solid #BDBDBD;
 
-    border-radius: 8px;
 
-  }
+.check-input {
 
- 
+  vertical-align: middle;
 
-  .form-check{
+  margin-right: 0.5rem;
 
-    font-size: 90%;
+}
 
-    color: red;
 
-    padding-left: 0;
 
-  }
+.check-input:checked {
+  border: solid 1px red;
+  background-color: rgb(255, 255, 255);
+  color: red;
+  accent-color: red;
+}
 
- 
+.started {
+  background-color: #DB2423;
+  color: white;
+  font-size: 75%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 5%;
+  width: 90%;
+  height:20vh;
+  margin-left: 1rem;
 
-  .form-check-label{
+}
 
-    font-size: 80%;
 
-    vertical-align: middle;
 
-  }
+.googlee {
+  font-size: 75%;
+  width: 88%;
+  border: solid #EEEEEE 2px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  // text-align: center;
+}
 
- 
+.google-logo {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  // padding-bottom: 4px;
+  margin-top: 10px;
+  margin-left: -0px;
+}
 
-  .check-input{
+.input-box {
 
-    vertical-align: middle;
+  position: relative;
 
-    margin-right: 0.5rem;
+  // width: 300px;
 
-  }
 
- 
 
-  .check-input:checked{
+}
 
-    border: solid 1px red;
+.input-box input {
 
-    background-color: rgb(255, 255, 255);
+  width: 100%;
 
-    color: red;
+  padding: 10px;
 
-    accent-color: red;
+  padding: 8px 8px;
 
-  }
+  border: 1px solid #BDBDBD;
 
-  .started{
+  border-radius: 8px;
 
-    background-color: #DB2423;
+  transition: 0.6s;
 
-    color: white;
+}
 
-    font-size: 75%;
+.input-box span {
 
-    padding-top: 0.5rem;
+  position: absolute;
 
-    padding-bottom: 0.5rem;
+  left: 0;
 
-    margin-top: 5%;
+  padding: 10px;
 
-    width: 100%;
+  font-size: 1 rem;
 
-  }
+  color: #424242;
 
- 
+  text-transform: lowercase;
 
-  .googlee{
+  pointer-events: none;
 
-    font-size: 75%;
+  transition: 0.6s;
 
-    padding-top: 0.5rem;
+}
 
-    padding-bottom: 0.5rem;
+.input-box input:valid~span,
 
-    margin-top: 4%;
+.input-box input:focus~span {
 
-    width: 100%;
+  color: #424242;
 
-    border: solid #EEEEEE 2px;
+  transform: translate(10px) translate(-7px);
 
-  }
+  font-size: 12.8px;
 
- 
+  font-weight: 600;
 
-  .google-logo{
+  padding: 0 10px;
 
-    margin-right: 10px;
+  background-color: #fff;
 
-  }
+  letter-spacing: 0.1rem;
 
-  .input-box{
+  background-size: cover;
 
-    position: relative;
+}
 
-    // width: 300px;
+.input-box input:valid,
 
- 
+.input-box input:focus {
 
-  }
+  color: #424242;
 
-  .input-box input{
+  border: 2px;
 
-    width: 100%;
+}
 
-    padding: 10px;
+// .custom-float-label label {
 
-    padding: 8px 8px;
+//   transform: translateY(-14px) scale(1.0);
 
-    border: 1px solid #BDBDBD;
+//   pointer-events: none;
 
-    border-radius: 8px;
+// }
 
-    transition: 0.6s;
+// .floated {
 
-  }
+//   transform: translateY(-14px) scale(0.8);
 
-  .input-box span{
+//   transition: transform 0.3s ease-in-out;
 
-    position: absolute;
+//   pointer-events: none;
 
-    left: 0;
+// }
 
-    padding: 10px;
 
-    font-size: 1 rem;
 
-    color: #424242;
+.password-filed {
+  margin-top: 23px;
+}
 
-    text-transform: lowercase;
 
-    pointer-events: none;
 
-    transition: 0.6s;
+.password {
 
-  }
+  display: block;
 
-  .input-box input:valid ~span,
+  margin-top: 4px;
 
-  .input-box input:focus ~span{
+}
 
-    color: #424242;
+.span{
+  margin-top: 15px;
+  margin-left: 60px;
+  padding-top: 0rem;
+  font-size: 10px;
+}
 
-    transform: translate(10px) translate(-7px);
-
-    font-size: 12.8px;
-
-    font-weight: 600;
-
-    padding: 0 10px;
-
-    background-color: #fff;
-
-    letter-spacing: 0.1rem;
-
-    background-size:cover;
-
-  }
-
-  .input-box input:valid ,
-
-  .input-box input:focus {
-
-    color: #424242;
-
-    border: 2px;
-
-  }
-
-  // .custom-float-label label {
-
-  //   transform: translateY(-14px) scale(1.0);
-
-  //   pointer-events: none;
-
-  // }
-
-  // .floated {
-
-  //   transform: translateY(-14px) scale(0.8);
-
-  //   transition: transform 0.3s ease-in-out;
-
-  //   pointer-events: none;
-
-  // }
-
- 
-
-  .password-filed{
-    margin-top: 23px;
-  }
-
- 
-
-  .password{
-
-    display: block;
-
-    margin-top: 4px;
-
-  }
+.fw-bold text-body{
+  font-weight: bold;
+}
