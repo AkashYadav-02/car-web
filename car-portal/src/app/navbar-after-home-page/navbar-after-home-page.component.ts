@@ -1,7 +1,9 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input, HostListener} from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { RedirectMenuService } from 'src/services/redirect-menu.service';
+
+declare var $: any;
 
 @Component({
   selector: 'app-navbar-after-home-page',
@@ -45,6 +47,12 @@ export class NavbarAfterHomePageComponent implements OnInit{
     private fb: FormBuilder,
     private redirectMenu : RedirectMenuService,
      ) {}
+
+    //  @HostListener('window:scroll', ['$event']) 
+    // scrollHandler(event:Event) {
+    //   console.debug("Scroll Event");
+    //   this.navtheme='';
+    // }
 
   expandSideBar(){
 

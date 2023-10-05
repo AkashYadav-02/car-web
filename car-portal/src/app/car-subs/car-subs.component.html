@@ -87,24 +87,26 @@
             </div>
 
             <div class="leftcard my-3">
-                <div style="display: flex; justify-content: space-between;">
+                <div style="display: flex; justify-content: space-between; ">
                     <div>
                         <h2>Nissan Maxima Platinum 2022</h2>
-                        <p class="mb-5">Engine Capacity 3.5 L/213 . Diesel . Manual</p>
+                        <p class="mb-4">Engine Capacity 3.5 L/213 &bull; Diesel &bull; Manual</p>
                     </div>
                     <div style="text-align: center;">
                         <i style="font-size: 30px;" class="fa-regular fa-heart"></i>
                         <p style="font-size: 13px;">1 Person <br>Shortlisted</p>
                     </div>
                 </div>
-                
+                <p style="font-size: 15px; font-family: Inter; color: #636363;">Select Variant <i class="fa-solid fa-chevron-down" style="margin-left: 5px;"></i></p>
                 <div class="coloraccessories">
                     <div>
                         <h3>Color</h3>
-                        <button class="redbtn btn btn-danger border border-primary"></button>
-                        <button class="redbtn btn btn-success"></button>
-                        <button class="redbtn btn btn-warning"></button>
-                        <button class="redbtn btn btn-secondary"></button>
+                        <form >
+                        <button id="#45473D" class="redbtn btn" style="background-color: #45473D;" (click)="outline($event)"></button>
+                        <button id="#000000" class="redbtn btn" style="background-color: #000000;" (click)="outline($event)"></button>
+                        <button id="#DB2423" class="redbtn btn" style="background-color: #DB2423;" (click)="outline($event)"></button>
+                        <button id="#9f9f9f" class="redbtn btn" style="background-color: #9f9f9f;" (click)="outline($event)"></button>
+                    </form>
                     </div>
                     <div>
                         <h3>Car Accessories</h3>
@@ -148,12 +150,13 @@
 
                     <p class='subhead'>Tenure <span class="text-secondary">(Months)</span></p>
                     <div class="numbers">
-                        <button class="btn btn-white border border-2 border-secondary">24</button>
-                        <button class="btn btn-white border border-2 border-secondary">36</button>
-                        <button class="btn btn-white border border-2 border-secondary">48</button>
-                        <button class="btn btn-white border border-2 border-secondary">60</button>
-                        <button class="btn btn-white border border-2 border-secondary">72</button>
-                        <button class="btn btn-white border border-2 border-secondary">84</button>
+                        <button class="btn btn-white border border-1 border-black">24</button>
+                        <button class="btn btn-white border border-1 border-black">36</button>
+                        <button class="btn btn-white border border-1 border-black">48</button>
+                        <button class="btn btn-white border border-1 border-black">60</button>
+                        <button class="btn btn-white border border-1 border-black">72</button>
+                        <button class="btn btn-white border border-1 border-black">84</button>
+                        <!-- <button class="btn btn-white border border-1 border-black">84</button> -->
                     </div>
 
 
@@ -192,6 +195,28 @@
                             checked>
                         <label class="form-check-label" for="flexSwitchCheckChecked">Yes</label>
                     </div>
+
+                    <p class='subhead'>Percentage</p>
+                    <p style="font-size: 13px; margin-top: -15px; margin-bottom: 10px; font-weight: bold; color:grey">Adjust Slider or Type in the Percentage</p>
+                    
+                        <div class="container rangerr">
+                            <p><b>%</b></p>
+                            <!-- <input class="border border-1 rangerinp" type="search" placeholder="Search" aria-label="Search"> -->
+                        </div>
+                    
+                    <input type="range" id="vol" name="vol" min="0" max="100" list="tickmarks" style="accent-color: #E42346; width: 100%; height: 5px;">
+                    <datalist id="tickmarks">
+                        <option value="5" label="5%"></option>
+                        <option value="10" label="10%"></option>
+                        <option value="15" label="15%"></option>
+                        <option value="20" label="20%"></option>
+                        <option value="25" label="25%"></option>
+                        <option value="30" label="30%"></option>
+                        <option value="35" label="35%"></option>
+                      </datalist>
+                      <div class="container text-center mt-3">
+                        <button class="btn btn-secondary buybtn mb-3" style="justify-content: center;">Buy Back Pack Amount</button>
+                    </div>
                 </div>
                 <hr>
                 <p class="lc-header"  (click)="onPress()">Eligibility<i class="fa-solid" [class.fa-angle-down]="isLowerVisible" [class.fa-angle-up]="!isLowerVisible"></i></p>
@@ -210,19 +235,19 @@
                     <div class="fields">
                         <div style="display: flex;">
                             <p>Monthly Income : </p>
-                            <input type="text">
+                            <input type="text" placeholder="$0.00">
                         </div>
                         <div style="display: flex;">
                             <p >Monthly Expenses : </p>
-                            <input type="text">
+                            <input type="text" placeholder="$0.00">
                         </div>
                         <div style="display: flex;">
                             <p >Monthly Liabilities : </p>
-                            <input type="text">
+                            <input type="text" placeholder="$0.00">
                         </div>
                         <div style="display: flex;">
                             <p >Years of Employment : </p>
-                            <input type="text">
+                            <input type="text" value="2">
                         </div>
                         <div style="display: flex;">
                             <p >Years : </p>
@@ -230,24 +255,29 @@
                         </div>
                     </div>
                     <div class="container text-center mt-3">
-                        <button class="btn btn-secondary" style="justify-content: center;">Checked</button>
+                        <button class="btn btn-secondary checkbtn mb-3" style="justify-content: center;">Check Now   <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                     <div class="mt-3">
-                        <h5 style="font-weight: bolder;">RESULT : <span class="text"
-                                style="color: rgb(0, 197, 13);">ELIGIBLE</span></h5>
+                        <h5 style="font-family:Inter  ;font-weight: 800;">RESULT : <span class="text"
+                                style="color: rgb(0, 187, 12);  font-family:Inter  ;font-weight: 800;"><b>ELIGIBLE</b></span></h5>
                     </div>
-                    <h6 style="color: #db0000;"><b><U>SWITCH MODEL</U></b></h6>
+                    <p style="font-weight: bold; font-size: 14px; color: grey;">(You're eligible for an upgrade to higher variant)</p>
+                    <p style="color: #db0000; font-size: 14px; font-family: Inter;"><b><U>SWITCH MODEL</U></b></p>
                     <div style="display: flex; gap: 10px;">
                         <div class="small-card">
-                            <img src="../../assets/car1.png">
+                            <img src="../../assets/Cars/carr1.png">
                         </div>
                         <div class="small-card">
-                            <img src="../../assets/car2.png">
+                            <img src="../../assets/Cars/carr2.png">
                         </div>
                         <div class="small-card">
-                            <img src="../../assets/car3.png">
+                            <img src="../../assets/Cars/carr1.png">
                         </div>
+                    </div><br>
+                    <div class="container text-center">
+                        <p style="color: #db0000; font-size: 14px; font-family: Montserrat;"><b>View all <i class="fa-solid fa-arrow-right"></i></b></p>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -260,9 +290,9 @@
         <h6 style="font-size: 12px; margin-top: 2.5px;">Fixed on road price</h6>
     </div>
     <div class="cs-footer-com">
-        <h6 class="price">$0,000/m</h6>
+        <h6 class="price" style="font-size: 13px;">$0,000/m</h6>
         <i></i>
-        <h6 class="redtxt">View Benefits</h6>
+        <h6 class="redtxt" style="font-size: 13px;">View Benefits</h6>
     </div>
     <div class="cs-footer-com">
         <button class="btn">Apply Now</button>
