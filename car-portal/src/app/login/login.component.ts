@@ -120,14 +120,13 @@ redirectToForgotPassPage(){
  
 
 onSubmit() {
-
   if (this.login && this.login.valid) {
-
-    console.log('Form submitted');
-
-    this.logindata();
-
     this.redirect('home');
+
+    // console.log('Form submitted');
+
+    // this.logindata();
+
 
   }
 
