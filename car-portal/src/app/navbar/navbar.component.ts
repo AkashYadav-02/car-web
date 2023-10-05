@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { RedirectMenuService } from 'src/services/redirect-menu.service';
 
 @Component({
@@ -6,13 +6,33 @@ import { RedirectMenuService } from 'src/services/redirect-menu.service';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit{
+
+  @Input() navtheme?:string;
+
+  txtcolor='white';
+  aurologo='../../assets/Aurionpro.png';
+  bgcolor='rgba(0, 0, 0, 0)';
+
+  ngOnInit(): void {
+    if (this.navtheme =='blacktheme'){
+      this.txtcolor='white';
+      this.bgcolor='rgba(0, 0, 0, 0)'
+      this.aurologo='../../assets/Aurionpro.png';
+    } else if (this.navtheme =='whitetheme'){
+      this.txtcolor='black';
+      this.bgcolor='white'
+      this.aurologo='../../assets/logos/logo.png';
+    }
+  }
 
   constructor(
     private redirectService: RedirectMenuService
     ){
-
   }
+
+  
+
 
   redirect(path : string){
     this.redirectService.redirectTo(path);
