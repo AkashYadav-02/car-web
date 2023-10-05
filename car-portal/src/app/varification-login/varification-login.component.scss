@@ -65,7 +65,7 @@
 .subchild1 h1 {
     font-family: China;
     font-size: 32px;
-    margin-left: -12rem;
+    margin-left: -13rem;
     color: white;
 
 
@@ -175,8 +175,8 @@
 
 .childclass2 span {
 
-    font-size: 0.8rem;
-
+    font-size: 0.65rem;
+    font-family: Monts;
     padding: bottom 100px;
 
 }
@@ -247,7 +247,7 @@
 
     font-size: 0.7rem;
 
-    font-family: 'Aps-montserrat';
+    font-family: Monts;
 
     color: #616161;
 
@@ -262,6 +262,10 @@
     width: 100%;
 
     border: solid #EEEEEE 2px;
+
+    border-radius: 8px;
+    border: 1px solid #EEE;
+    background: #FAFAFA;
 
 }
 
@@ -289,8 +293,14 @@
 
 .google-logo {
 
-    margin-right: 10px;
+    margin-right: 5rem;
+    height: 1rem;
+    width: 1rem;
 
+}
+
+.login-btns {
+    margin-left: -3rem;
 }
 
 body {
