@@ -19,7 +19,10 @@ import { LoginComponent } from './login/login.component';
 import { RmCarCollecComponent } from './rm-homepage/rm-car-collec/rm-car-collec.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WorkspaceComponent } from './workspace/workspace.component';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 422220230edaeca88c99cddbd7362c99aee638b6
 import { NavbarAfterHomePageComponent } from './navbar-after-home-page/navbar-after-home-page.component';
 import { HomePageAfterComponent } from './home-page-after/home-page-after.component';
 import { VarificationLoginComponent } from './varification-login/varification-login.component';
@@ -28,16 +31,18 @@ import { HttpClientModule } from '@angular/common/http'
 import { AgGridModule } from 'ag-grid-angular';
 import { HomepageUpperComponent } from './rm-homepage/homepage-upper/homepage-upper.component';
 
+<<<<<<< HEAD
 
 import { HomeupperpageComponent } from './rm-homepage/homeupperpage/homeupperpage.component';
 import { AfternavbarComponent } from './afternavbar/afternavbar.component';
 
 import { RouterModule } from '@angular/router';
 
+=======
+>>>>>>> 422220230edaeca88c99cddbd7362c99aee638b6
 @NgModule({
   declarations: [
     AppComponent,
-    
     CarSubsComponent,
     HomeCarCollecComponent,
     RmHomepageComponent,
@@ -57,7 +62,6 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule,
     FormsModule,
     ReactiveFormsModule,
     ToastModule,
