@@ -144,54 +144,21 @@ font-family: 'ZenKakuGothicAntique';
  
 
 .childclass2 span {
-  font-size: 0.8rem;
+  font-size: 0.3 rem !important;
   padding: bottom 100px;
 }
 
 .childclass2 a {
-
- 
-
   color: #DB2423;
-
- 
-
   font-size: 0.8rem;
-
-font-family:  'Aps-Inter'  ;
-
+font-family:  'Inter'  ;
   float: right;
-
- 
-
   line-height: 3.5rem;
-
- 
-
 }
-
- 
-
 .childclass2 a1 {
-
- 
-
   font-size: 0.8rem;
-
- 
-
   line-height: 4.0rem;
-
- 
-
 }
-
- 
-
- 
-
- 
-
 .form-group {
   line-height: 1.5rem;
   font-family: 'Aps-Montserrat';
@@ -355,12 +322,10 @@ select.did-floating-select::-ms-expand {
   justify-content: center;
 }
 
- 
 
 .or-text {
-
-  font-size: 1rem !important;
-  font-family: 'Aps-ZenKakuGothicAntique';
+  font-size: 0.8rem !important;
+  font-family: 'ZenKakuGothicAntique';
   color: #212121;
   line-height: normal;
   font-style: normal;
@@ -405,14 +370,15 @@ select.did-floating-select::-ms-expand {
 .span {
   color: #212121;
   text-align: center;
-  font-size: 2.8px;
+  font-size: 10.8px;
+  // font-size: 0.6rem !important;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  // line-height: normal;
   cursor: pointer;
+  // width: -0%;
 }
 
- 
 .google-logo {
   margin-right: 10%;
   margin-left: 1%;
