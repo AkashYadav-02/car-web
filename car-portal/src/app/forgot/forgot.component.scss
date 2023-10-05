@@ -27,18 +27,15 @@
 }
 
 .childclass1 {
-
   position: relative;
-
   width: 50%;
+  margin-top: -10%;
 }
 
 .childclass1 img {
 
   height: 51%;
   width: 50%;
-
-
 
 }
 
@@ -121,10 +118,19 @@ img{
 }
 
 #sendbutton{
-  height: 50px;
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-size: 15px;
+ 
+  background-color: #DB2423;
+  color: white;
+  font-size: 0.7rem;
+  font-family: 'Aps-montserrat';
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 92%;
+  height: 7vh;
+  margin-left: 4%;
+  justify-content: center;
 }
 
 .container{
@@ -227,15 +233,20 @@ img{
 }
 
 .started {
+  
+  
   background-color: #DB2423;
   color: white;
-  font-size: 75%;
+  font-size: 0.7rem;
+  font-family: 'Aps-montserrat';
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  margin-top: 5%;
-  width: 90%;
-  height:20vh;
-  margin-left: 1rem;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 92%;
+  height: 6vh;
+  margin-left: 4%;
+  justify-content: center;
 
 }
 
