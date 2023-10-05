@@ -1,19 +1,8 @@
 <div class="mainclass w-full">
-
- 
-
     <!-- <img src="../../assets/images/background.png"> -->
-
- 
-
     <div class="childclass1">
-
- 
-
       <img src="https://s3-alpha-sig.figma.com/img/c259/7a8d/7f9091727584b82529cb60ae7e5e7c81?Expires=1696809600&Signature=BrXvYQjujd7hPBC58a89qabnssdYSVSPRr8x0nHaUKW9X7CiKTkWixkLxSffm2jNnEet45eQHQo5jA8144I7BAqvZtntOS5f4DiDwdb5lnhV-x42IRh3aSj8pk55vPGdx7qWez7VMmGZRRKdgmp5e-R5GEWOB5ZqbCmqq04ds6FsqScnjkfx73ltc1I7ju7RMpjB6MX72M5wkmKmaUjFwPBDY8I8eM9OsRT2ql9F6f1aLpEv8yjVe3kYsc6~t5OVg4l73oNUOeyXkbIMrYJww2roTisTsZSNBLmUrFP5mmw2g04YMVcnfiZ~fwoBoNJpVLJt0CLOnHpap~XL7n9Hjw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
-
- 
-
+      
       <div class="subchild1">
 
         <h1>Building the Future...</h1>
@@ -26,70 +15,59 @@
 
     </div>
 
-    <div class="childclass2">
-
-       <div class="header">
-
-        <!-- <img id="back-circle" src="../../assets/arrow-circle-left.png" style="display: inline-block; vertical-align: middle;"> -->
-
-        <h5 style="display: inline-block; vertical-align: middle;">Forgot Password</h5>
-
-       </div>
-
-      <form (ngSubmit)="onSubmit()">
-
-        <div class="form-group">
-
-      <label   id="email" for="email">Enter Email Address to Request for OTP link</label>
-
-      <input  type="email"  class="form-control" formControlName="email" required >
-
-      <label id="signin"> Back to sign in</label>
-
- 
-
-    </div>
-
-        <button type="submit" class="started btn" (click)="onSubmit()" >Verify</button>
-
-      <div class="container">
-
-        <div class="row justify-content-center  ">
-
-          <div class="col-md-5">
-
-            <hr class="my-2">
-
-          </div>
-
-          <div class="col-auto">
-
-            <p class="or-text">or</p>
-
-          </div>
-
-          <div class="col-md-5">
-
-            <hr class="my-2">
-
-          </div>
-
+      <div class="childclass2">
+        
+        <div class="header">
+          <h5 style="font-weight: bold;">Forgot Password</h5>
         </div>
+        <div class="arow">
+        <img src="../../assets/arrow-circle-left.png">
+      </div>
+          <div class="form-group">
+
+        <label   id="email" for="email">Enter Email Address to Request for OTP link</label>
+            <br>
+            <br>
+        <input  type="email"  class="form-control" formControlName="email" required >
+            <br>
+        <label id="signin"> Back to sign in</label>
+
+        <form (ngSubmit)="onSubmit()">
+          <div>
+          <button id="sendbutton" type="submit" class="started btn" (click)="onSubmit()" >Send</button>
+          </div>
+    
+          <div class="container">
+
+            <div class="row justify-content-center  ">
+
+              <div class="col-md-5">
+                <hr class="my-2">
+              </div>
+
+              <div class="col-auto" style="font-weight: 400;">
+                <p class="or-text">Or</p>
+              </div>
+
+              <div class="col-md-5">
+                <hr class="my-2">
+              </div>
+
+            </div>
+
+          </div> 
+         <!-- ../../assets/images/icons8-google.jpg -->
+           <button class="googlee btn btn-google"><img src="../../assets/login_image/google.png" alt="Google Logo" class="google-logo mr-2">Sign Up with Google</button>
+          
+          <button class="googlee btn btn-google"><img src="../../assets/login_image/apple.jpg" alt="Apple Logo" class="google-logo mr-2" style="font-family: 'Montserrat';">Sign Up with Apple</button>
+        
+          <div class="span"> 
+            <!-- routerLink='register' -->
+            <span>Don't Have an Account? <a  class="fw-bold text-body" (click)="redirect('registration')">LOGIN HERE</a></span>
+          </div>
+
+        </form> 
 
       </div>
-      <!-- ../../assets/images/icons8-google.jpg -->
-        <button class="googlee btn btn-google"><img src="../../assets/login_image/google.png" alt="Google Logo" class="google-logo mr-2">Sign Up with Google</button>
-
-        <button class="googlee btn btn-google"><img src="../../assets/login_image/apple.jpg" alt="Apple Logo" class="google-logo mr-2">Sign Up with Apple</button>
-
-<div class="span">
-    <!-- routerLink='register' -->
-    <span>Don't Have an Account? <a  class="fw-bold text-body"  (click)="redirect('registration')">RegisterHere</a></span>
-
-        </div>
-
-      </form>
-
-    </div>
 
   </div>
