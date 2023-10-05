@@ -162,7 +162,7 @@ hr {
 .profile-pic-name {
     color: #0F0F0F;
     font-family: Inter;
-    font-size: 24px;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
@@ -173,7 +173,7 @@ hr {
 .profile-pic-country {
     color: #737373;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -182,12 +182,17 @@ hr {
     margin-top: -15px;
 }
 
+.profile-pic-country span{
+    opacity: 0.8;
+}
+
 .profile-pic-details {
     display: flex;
 }
 
 .profile-name {
     margin-left: 20px;
+    align-self: self-end;
 }
 
 .car-bg {
