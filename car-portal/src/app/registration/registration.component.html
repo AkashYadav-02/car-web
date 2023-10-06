@@ -1,14 +1,14 @@
 <div class="mainclass w-full">
   <!-- <img src="../../assets/images/background.png"> -->
   <div class="childclass1">
-    <img
+    <img class="logoimg"
       src="https://s3-alpha-sig.figma.com/img/c259/7a8d/7f9091727584b82529cb60ae7e5e7c81?Expires=1696809600&Signature=BrXvYQjujd7hPBC58a89qabnssdYSVSPRr8x0nHaUKW9X7CiKTkWixkLxSffm2jNnEet45eQHQo5jA8144I7BAqvZtntOS5f4DiDwdb5lnhV-x42IRh3aSj8pk55vPGdx7qWez7VMmGZRRKdgmp5e-R5GEWOB5ZqbCmqq04ds6FsqScnjkfx73ltc1I7ju7RMpjB6MX72M5wkmKmaUjFwPBDY8I8eM9OsRT2ql9F6f1aLpEv8yjVe3kYsc6~t5OVg4l73oNUOeyXkbIMrYJww2roTisTsZSNBLmUrFP5mmw2g04YMVcnfiZ~fwoBoNJpVLJt0CLOnHpap~XL7n9Hjw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
     <div class="subchild1">
       <h1>Building the Future...</h1>
       <p>Lorem ipsum dolor sit amet,
         consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <div class="slider">
-        <img src="../../assets/login_image/carousel-slider.svg   ">
+        <img src="../../assets/login_image/carousel-slider.svg">
       </div>
     </div>
   </div>
@@ -45,22 +45,16 @@
           <label class="did-floating-label" style="font-size: -0.3rem;">ConfirmPassword<span
               class="required-asterisk">*</span></label>
         </div>
-
-
-        <!-- <button type="submit " class="started btn"  >Login</button> -->
-
         <div class="form-check text-  md" style="
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; margin-top: -4%;">
+       display: inline-flex;
+       justify-content: center;
+     align-items: center;
+     gap: 20px; margin-top: -4%;">
           <input type="checkbox" class="form-check-input" id="exampleCheck1" formControlName="termsAndConditions">
           <label class="form-check-label termscon" for="exampleCheck1"> I agree to Terms & Conditions</label>
         </div>
-
+        <p-toast position="bottom-center" key="bc"></p-toast>
         <button type="submit" class="started btn" (click)="onSubmit()">Get Started</button>
-
-
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-5">

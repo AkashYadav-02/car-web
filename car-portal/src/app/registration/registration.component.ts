@@ -31,7 +31,6 @@ export class RegistrationComponent {
     private formBuilder: FormBuilder,
     private redirectMenu: RedirectMenuService
   ) {}
-
   ngOnInit(): void {
     this.register = this.formBuilder.group({
       fname: ['', [Validators.required, Validators.minLength(2), Validators.pattern('[a-zA-Z ]*')]],
