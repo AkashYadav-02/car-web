@@ -20,40 +20,36 @@
 }
 
 .childclass1 img {
-  height: 48%;
+  height: 45%;
   width: 60%;
-  margin-left: 1rem;
+  margin-left: 0rem;
 }
 
 .slider{
   width: 200px;
   margin-top: -3rem;
-  margin-left: 0.1rem;
+  margin-left: 1rem;
   height: 8px;
 
 }
 .subchild1 {
   margin-top: -7rem;
   margin-left: 2rem;
+  margin-bottom: 1rem;
 }
 
 .subchild1 h1 {
-
   font-size: 32px;
-
   color: white;
-
-  // display: flex;
-
-  // font-display: flex;
-
+font-family: 'ZenKakuGothicAntique';
 }
 
 .subchild1 p {
   margin-top: 2%;
-  width: 60%;
+  width: 47%;
   font-size: 12px;
   color: #D9D9D9;
+  font-family: 'ZenKakuGothicAntique';
 }
 
 .childclass2 {
@@ -61,7 +57,7 @@
   border-radius: 10px;
   position: relative;
   width: 36%;
-  height: fit-content;
+  height: 93vh;
   padding: 1rem 2rem;
   background-color: white;
 }
