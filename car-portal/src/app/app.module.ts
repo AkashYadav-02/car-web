@@ -35,6 +35,7 @@ import { AfternavbarComponent } from './afternavbar/afternavbar.component';
 
 import { RouterModule } from '@angular/router';
 import { MainProfileComponent } from './forgot/main-profile/main-profile.component';
+import { DetailsPageThreeComponent } from './details-page-three/details-page-three.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { MainProfileComponent } from './forgot/main-profile/main-profile.compone
     HomePageAfterComponent,
     HomepageUpperComponent,
     FooterComponent,
-    MainProfileComponent
+    MainProfileComponent,
+    DetailsPageThreeComponent
   ],
   imports: [
     BrowserModule,
