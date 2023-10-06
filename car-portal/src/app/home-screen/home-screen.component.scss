@@ -431,7 +431,7 @@ hr {
 .firstDiv {
     width: 560px;
     height: 25%;
-    padding: 25px;
+    padding: 25px 25px 25px 40px;
     opacity: 0.70;
     background: rgba(15, 15, 15, 0.17);
     border-radius: 20px;
@@ -523,7 +523,7 @@ hr {
 .twoDivFirst {
     width: 567px;
     height: 110px;
-    padding: 25px;
+    padding: 25px 40px 25px 25px;
     background: rgba(15, 15, 15, 0.17);
     border-radius: 20px;
     overflow: hidden;
@@ -607,7 +607,7 @@ hr {
     right: 0px;
     position: absolute;
     height: 107px;
-    padding: 25px;
+    padding: 25px 40px 25px 25px;
     opacity: 0.70;
     mix-blend-mode: exclusion;
     background: rgba(15, 15, 15, 0.17);

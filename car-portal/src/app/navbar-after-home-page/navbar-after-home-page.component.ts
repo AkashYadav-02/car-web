@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, HostListener} from '@angular/core';
+import { Component, OnInit, Input, HostListener, ElementRef, ViewChild, Renderer2} from '@angular/core';
+
 import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { RedirectMenuService } from 'src/services/redirect-menu.service';
@@ -66,9 +67,26 @@ export class NavbarAfterHomePageComponent implements OnInit{
 
     }
     console.log(this.isExpand);
+  }
 
-   
-
+  setBackground(color:string){
+    if(color == "black"){
+      this.txtcolor='black';
+      this.bgcolor='white'
+      this.aurologo='../../assets/logos/logo.png';
+      this.like='../../assets/logos/Like2.png';
+      this.noti='../../assets/logos/Notification2.png';
+      this.sett='../../assets/logos/Settings2.png';
+      this.sideburger='../../assets/logos/black-burger.png';
+    }else{
+      this.txtcolor='white';
+      this.bgcolor='rgba(0, 0, 0, 0)'
+      this.aurologo='../../assets/Aurionpro.png';
+      this.like='../../assets/logos/Like.png';
+      this.noti='../../assets/logos/Notification.png';
+      this.sett='../../assets/logos/Settings.png';
+      this.sideburger='../../assets/logos/white-burger.png';
+    }
   }
 
   redirect(path : string){

@@ -31,6 +31,20 @@ export class NavbarComponent implements OnInit{
     ){
   }
 
+  setBackground(color:string){
+    if (color =='black'){
+
+      this.txtcolor='black';
+      this.bgcolor='white'
+      this.aurologo='../../assets/logos/logo.png';
+
+    } else{
+ 
+      this.txtcolor='white';
+      this.bgcolor='rgba(0, 0, 0, 0)'
+      this.aurologo='../../assets/Aurionpro.png';
+    }
+  }
   
 
 
