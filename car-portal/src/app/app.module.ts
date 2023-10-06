@@ -37,6 +37,7 @@ import { RouterModule } from '@angular/router';
 import { MainProfileComponent } from './forgot/main-profile/main-profile.component';
 import { ApplyNowFlow1Component } from './apply-now-flow1/apply-now-flow1.component';
 // import { ToastmssageComponent } from './toastmssage/toastmssage.component';
+ 
 
 @NgModule({
   declarations: [

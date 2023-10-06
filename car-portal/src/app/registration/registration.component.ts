@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
 import { Router } from '@angular/router';
+import { MessageService } from 'primeng/api';
 import { RedirectMenuService } from 'src/services/redirect-menu.service';
 
 function passwordMatchValidator(control: AbstractControl): ValidationErrors | null {
@@ -17,6 +18,7 @@ function passwordMatchValidator(control: AbstractControl): ValidationErrors | nu
   selector: 'app-registration',
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.scss'],
+  providers: [MessageService]
 })
 export class RegistrationComponent {
   email: string = '';
@@ -29,7 +31,8 @@ export class RegistrationComponent {
   constructor(
     private router: Router,
     private formBuilder: FormBuilder,
-    private redirectMenu: RedirectMenuService
+    private redirectMenu: RedirectMenuService,
+    private messageService: MessageService
   ) {}
 
   ngOnInit(): void {
@@ -54,12 +57,13 @@ export class RegistrationComponent {
   }
 
   onSubmit() {
-    this.redirect('user/login');
-    if (this.register && this.register.valid) {
-      // console.log('Form submitted');
-      // You can perform additional actions here, e.g., sending the form data to an API.
-    } else {
-      console.log('Please fill in all required fields and make sure passwords match.');
-    }
+    this.messageService.add({ key : 'tc' ,severity: 'success', summary: 'Success', detail: 'Message Content' }); 
+       this.redirect('user/login');
+    // if (this.register && this.register.valid) {
+    //   // console.log('Form submitted');
+    //   // You can perform additional actions here, e.g., sending the form data to an API.
+    // } else {
+    //   console.log('Please fill in all required fields and make sure passwords match.');
+    // }
   }
 }

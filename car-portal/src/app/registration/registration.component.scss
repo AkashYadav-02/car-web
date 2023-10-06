@@ -18,6 +18,14 @@
   padding-top: 1%;
 }
 
+:host ::ng-deep .p-toast {
+  /* Add your custom styles for the toast */
+  background-color: #f7f7ef ; /* Yellow background */
+  color: #14bd2b; 
+  border-radius: 0.5rem;
+  // height: 0.5rem;
+}
+
 .childclass1 {
   position: relative;
   width: 50%;
