@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-homepage-upper',
@@ -24,5 +24,9 @@ export class HomepageUpperComponent {
       this.clicked1=true
       console.log(this.clicked1,this.clicked2);
     }
+  }
+  @Output() newEvent = new EventEmitter<Event>()
+  close(){
+    console.log(event,"hello");
   }
 }

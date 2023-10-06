@@ -105,8 +105,8 @@ img {
   border: solid #d9d9d9;
   // height: 450px;
   padding: 10px;
-  margin-right: 1.8rem;
-  margin-left: 1.8rem;
+  margin-right: 2.8rem;
+  margin-left: 4.5rem;
   // height: 350px;
 }
 
@@ -125,10 +125,10 @@ img {
 }
 
 .first-card {
-  // margin: 10px;
-  width: 25rem !important;
+  width: 31rem !important;
   margin-bottom: 15px;
   border-radius: 16px;
+  margin-left: 0rem;
 }
 
 .first-card-text-3 {
@@ -270,7 +270,8 @@ img {
 }
 
 .second-card {
-  padding-left: 42px;
+  padding-left: 2rem;
+  width: 26rem;
 }
 
 .search-filters {
@@ -298,7 +299,7 @@ img {
   height: 32px;
   border-radius: 5px;
   border: 0.8px solid rgba(0, 0, 0, 0.15);
-  margin-left: 186px;
+  margin-left: 8.4rem;
 }
 
 .search-box {
@@ -310,6 +311,7 @@ img {
 
 .search-box-span {
   display: flex;
+  width: 24.5rem;
 }
 
 .serach-box-img {
@@ -403,7 +405,7 @@ img {
 }
 
 .budget-slider {
-  width: 28rem;
+  width: 23rem;
   // background: red;
 }
 
@@ -482,7 +484,9 @@ input[type="range"]::-webkit-slider-runnable-track {
   // padding: 10px;
   // margin-left: 60px;
   margin-left: 15px;
-  width: 431px;
+  width: 34rem;
+  // padding-left: 1rem;
+  // margin-right: 2rem;
 }
 
 .vertical-line {
