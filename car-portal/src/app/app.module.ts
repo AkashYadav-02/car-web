@@ -28,15 +28,12 @@ import { HttpClientModule } from '@angular/common/http'
 import { AgGridModule } from 'ag-grid-angular';
 import { HomepageUpperComponent } from './rm-homepage/homepage-upper/homepage-upper.component';
 import { FooterComponent } from './footer/footer.component';
-
-
 import { HomeupperpageComponent } from './rm-homepage/homeupperpage/homeupperpage.component';
 import { AfternavbarComponent } from './afternavbar/afternavbar.component';
-
 import { RouterModule } from '@angular/router';
 import { MainProfileComponent } from './forgot/main-profile/main-profile.component';
-import { DetailsPageThreeComponent } from './details-page-three/details-page-three.component';
 import { ApplyNowFlow1Component } from './apply-now-flow1/apply-now-flow1.component';
+import { DetailsPageThreeComponent } from './details-page-three/details-page-three.component';
 // import { ToastmssageComponent } from './toastmssage/toastmssage.component';
  
 
@@ -60,7 +57,10 @@ import { ApplyNowFlow1Component } from './apply-now-flow1/apply-now-flow1.compon
     HomePageAfterComponent,
     HomepageUpperComponent,
     FooterComponent,
-    MainProfileComponent
+    MainProfileComponent,
+    ApplyNowFlow1Component,
+    DetailsPageThreeComponent
+  
   ],
   imports: [
     BrowserModule,
