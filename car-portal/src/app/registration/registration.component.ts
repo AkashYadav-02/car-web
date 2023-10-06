@@ -54,8 +54,9 @@ export class RegistrationComponent {
   }
 
   onSubmit() {
+    this.redirect('user/login');
     if (this.register && this.register.valid) {
-      console.log('Form submitted');
+      // console.log('Form submitted');
       // You can perform additional actions here, e.g., sending the form data to an API.
     } else {
       console.log('Please fill in all required fields and make sure passwords match.');
