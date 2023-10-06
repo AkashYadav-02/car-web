@@ -1,7 +1,8 @@
-.mainclass{
+
+.mainclass {
   width: 100vw;
-  height: 100vh;
-  // background-color: aqua; 
+  height: fit-content;
+  // background-color: aqua;
   z-index: -1;
   position: absolute;
   background-image: url(../../assets/login_image/background.png);
@@ -11,74 +12,56 @@
   gap: 12%;
   padding-left: 10rem;
   padding-right: 10rem;
-
 }
-
+.row-2 {
+  padding-top: 1%;
+}
 .childclass1 {
-  position: relative;
-  width: 50%;
-  margin-top: -5%;
-
-}
-.childclass1 img {
-  height: 51%;
-  width: 60%;
-  margin-left: 1rem;
-}
-
-.slider{
-  width: 200px;
-  margin-top: 1rem;
-  margin-left: 0.3rem;
-  height: 8px;
-
-}
-
-.subchild1 {
-
-  margin-top: -110px;
-
+  // position: relative;
+  width: 50rem;
+  margin-top: -27px;
   margin-left: 2rem;
+}
 
+.logoimg {
+  height: 22rem;
+  display: flex;
+  margin-bottom: 2rem;
+  margin-left: -1.8rem;
+}
+.subchild1 {
+  margin-top: -150px;
+  
 }
 .subchild1 h1 {
-
   font-size: 32px;
   color: white;
+font-family: 'ZenKakuGothicAntique';
 }
 
 .subchild1 p {
-
-  margin-top: 2%;
-
-  width: 60%;
-
-  font-size: 12px;
-
+  margin-top: 0.7rem;
+  width: 17rem;
+font-family: 'ZenKakuGothicAntique';
+  font-size: 14px;
   color: #D9D9D9;
-
 }
-.childclass2{
 
+.slider img{
+  margin-top: -20px;
+  width: 100px;
+}
+
+.childclass2 {
   margin-top: 5%;
-
   border-radius: 10px;
-
   position: relative;
-
-  width: 41%;
-
-  // height: ;
-
+  width: 50%;
+  height: 91vh;
   padding: 1rem 2rem;
-
   background-color: white;
-
-  // height: 91vh;
-
- 
-
 }
+
 
 .childclass2 p{
 
@@ -151,3 +134,4 @@ text-align: center;
   font-weight: 700;
 
 }
+

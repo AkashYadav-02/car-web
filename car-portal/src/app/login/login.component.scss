@@ -16,46 +16,41 @@
 .row-2 {
   padding-top: 1%;
 }
-
 .childclass1 {
-  position: relative;
-  width: 50%;
-}
-
-.childclass1 img {
-  height: 51%;
-  display: flex;
-  margin-bottom: 1rem;
-  // gap: 10%;
-}
-
-.subchild1 {
-  margin-top: -130px;
+  // position: relative;
+  width: 50rem;
+  margin-top: -27px;
   margin-left: 2rem;
 }
 
- 
-
+.logoimg {
+  height: 22rem;
+  display: flex;
+  margin-bottom: 2rem;
+  margin-left: -1.8rem;
+}
+.subchild1 {
+  margin-top: -150px;
+  
+}
 .subchild1 h1 {
   font-size: 32px;
   color: white;
 font-family: 'ZenKakuGothicAntique';
-
 }
 
 .subchild1 p {
-  margin-top: 2%;
-  width: 48%;
+  margin-top: 0.7rem;
+  width: 17rem;
 font-family: 'ZenKakuGothicAntique';
-  font-size: 12px;
-
+  font-size: 14px;
   color: #D9D9D9;
-
- 
-
 }
 
- 
+.slider img{
+  margin-top: -20px;
+  width: 100px;
+}
 
 .childclass2 {
   margin-top: 5%;
@@ -75,9 +70,6 @@ font-family: 'ZenKakuGothicAntique';
   margin-bottom: -1.5rem;
   font-family: 'ZenKakuGothicAntique';
 }
-
- 
-
 .childclass2 p {
   color: #000;
   font-size: 0.7rem;
@@ -88,60 +80,17 @@ font-family: 'ZenKakuGothicAntique';
   margin-top: 1.5rem;
   margin-bottom: -0.5rem;
 }
-
- 
-
- 
-
- 
-
 .childclass2 h5 {
-
- 
-
   font-size: 1.163rem;
-
- 
-
   font-weight: bold;
-
- 
-
   //  margin-bottom: 7%;
-
- 
-
   font-family: 'Aps-ZenKakuGothicAntique';
-
- 
-
   //  font-weight: 500;  
-
- 
-
   color: #000;
-
- 
-
   font-style: normal;
-
- 
-
   line-height: 2.75rem;
 
- 
-
- 
-
- 
-
 }
-
- 
-
- 
-
- 
 
 .childclass2 span {
   font-size: 0.3 rem !important;
@@ -360,10 +309,7 @@ select.did-floating-select::-ms-expand {
   justify-content: center;
  
 }
-.slider{
-  width: 200px;
-  height: 8px;
-}
+
  
 
 .span {
