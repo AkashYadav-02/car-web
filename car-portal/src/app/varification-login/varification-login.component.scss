@@ -28,11 +28,11 @@
 
 }
 
- 
 
- 
 
- 
+
+
+
 
 .childclass1 {
 
@@ -42,7 +42,7 @@
 
 }
 
- 
+
 
 .childclass1 img {
 
@@ -60,29 +60,24 @@
 
 }
 
- 
+
 
 .subchild1 h1 {
-
+    font-family: China;
     font-size: 32px;
-
- 
-
-    margin-left: -9rem;
-
- 
-
+    margin-left: -13rem;
     color: white;
 
- 
+
 
 }
 
- 
 
- 
+
+
 
 .subchild1 p {
+    font-family: China;
 
     margin-top: 2%;
 
@@ -96,9 +91,9 @@
 
 .childclass2 {
 
- margin-top: 5%;
+    margin-top: 5%;
 
-border-radius: 10px;
+    border-radius: 10px;
 
     position: relative;
 
@@ -112,11 +107,11 @@ border-radius: 10px;
 
 }
 
- 
 
- 
 
- 
+
+
+
 
 .childclass2 h5 {
 
@@ -124,11 +119,11 @@ border-radius: 10px;
 
 }
 
- 
 
- 
 
- 
+
+
+
 
 .childclass2 p {
 
@@ -138,9 +133,9 @@ border-radius: 10px;
 
     font-style: normal;
 
-    font-family: 'Aps-ZenKakuGothicAntique';
+    font-family: China;
 
-    font-weight: 400;
+    font-weight: 600;
 
     line-height: 0.8rem;
 
@@ -150,7 +145,7 @@ border-radius: 10px;
 
 .childclass2 h5 {
 
-   font-size: 1.163rem;
+    font-size: 1.163rem;
 
     font-weight: bold;
 
@@ -164,29 +159,29 @@ border-radius: 10px;
 
 }
 
- 
 
- 
 
- 
 
- 
 
- 
 
- 
 
- 
+
+
+
+
+
+
+
 
 .childclass2 span {
 
-    font-size: 0.8rem;
-
+    font-size: 0.65rem;
+    font-family: Monts;
     padding: bottom 100px;
 
 }
 
- 
+
 
 .childclass2 a1 {
 
@@ -210,14 +205,14 @@ border-radius: 10px;
 
 .started {
 
-   background-color: #DB2423;
+    background-color: #DB2423;
 
     color: white;
 
     font-size: 0.7rem;
 
-    font-family: 'Aps-montserrat';
-
+    font-family: Monts;
+    font-weight: 600;
     padding-top: 1rem;
 
     padding-bottom: 1rem;
@@ -232,7 +227,7 @@ border-radius: 10px;
 
 .or-text {
 
-   font-size: 1rem !important;
+    font-size: 0.8rem !important;
 
     font-family: 'Aps-ZenKakuGothicAntique';
 
@@ -252,7 +247,7 @@ border-radius: 10px;
 
     font-size: 0.7rem;
 
-    font-family: 'Aps-montserrat';
+    font-family: Monts;
 
     color: #616161;
 
@@ -268,11 +263,15 @@ border-radius: 10px;
 
     border: solid #EEEEEE 2px;
 
+    border-radius: 8px;
+    border: 1px solid #EEE;
+    background: #FAFAFA;
+
 }
 
 .span {
 
-   color: #212121;
+    color: #212121;
 
     text-align: center;
 
@@ -290,12 +289,18 @@ border-radius: 10px;
 
 }
 
- 
+
 
 .google-logo {
 
-    margin-right: 10px;
+    margin-right: 5rem;
+    height: 1rem;
+    width: 1rem;
 
+}
+
+.login-btns {
+    margin-left: -3rem;
 }
 
 body {
@@ -326,11 +331,11 @@ body {
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
- 
+
 
 }
 
- 
+
 
 .container {
 
@@ -357,6 +362,7 @@ body {
     justify-content: center;
 
     margin-top: 2rem;
+    gap: 1rem;
 
 }
 
@@ -368,9 +374,9 @@ input {
 
     width: 2.5rem;
 
-    border: solid black;
+    border: 0.1rem solid #444;
 
-    border-width: 0.1rem;
+    border-width: -0.9rem;
 
     border-radius: 50%;
 
@@ -397,7 +403,7 @@ h1 {
 .otp-input-field {
 
     margin-left: 1rem;
-
+    font-family: Inter;
     font-size: 2rem;
 
     padding: 0.3rem;
@@ -414,7 +420,7 @@ h1 {
 
     margin-top: 2rem;
 
- 
+
 
 }
 
@@ -424,7 +430,7 @@ h1 {
 
     // align-items: center;
 
-    padding-left: 25%;
+    // padding-left: 25%;
 
     flex: auto;
 
@@ -432,9 +438,9 @@ h1 {
 
     color: #444;
 
-    // font-family: Inter;
+    font-family: Inter;
 
-    font-size: 1.5rem;
+    font-size: 1rem;
 
     font-style: normal;
 
@@ -442,7 +448,7 @@ h1 {
 
     line-height: normal;
 
-    display: flex;
+    // display: flex;
 
     // margin-left: -1.5rem;
 
@@ -458,7 +464,7 @@ h1 {
 
     text-align: center;
 
-    margin-top: 1rem;
+    margin-top: 4rem;
 
 }
 
@@ -466,9 +472,9 @@ h1 {
 
     color: #444;
 
-    font-family: 'Aps-montserrat';
+    font-family: Monts;
 
-    font-size: 1rem;
+    font-size: 0.8rem;
 
     font-style: normal;
 
@@ -482,7 +488,7 @@ h1 {
 
     text-align: center;
 
-    margin-top: 2rem;
+    margin-top: 1.6rem;
 
     margin-bottom: 2rem;
 
@@ -492,7 +498,7 @@ h1 {
 
     color: #ABABAB;
 
-    font-family: 'Aps-montserrat';
+    font-family: Monts;
 
     font-size: 0.7rem;
 
@@ -507,8 +513,8 @@ h1 {
 .resend-text {
 
     color: #E85C4D;
-
-    font-family: 'Aps-montserrat';
+    text-decoration: none;
+    font-family: Monts;
 
     font-size: 0.7rem;
 

@@ -1,55 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 
- 
-
 import { Form, FormControl, FormGroup } from '@angular/forms';
-
- 
-
 import { Router } from '@angular/router';
-
- 
-
 import { FormBuilder, Validators } from '@angular/forms';
 import { RedirectMenuService } from 'src/services/redirect-menu.service';
 
  
 
 @Component({
-
- 
-
   selector: 'app-login',
-
- 
-
   templateUrl: './login.component.html',
-
- 
-
   styleUrls: ['./login.component.scss']
-
- 
-
 })
-
- 
-
 export class LoginComponent implements OnInit {
-
- 
-
   email:string =''
-
- 
-
-  password : string='';
-
- 
-
-  login:FormGroup|any;
-
- 
+password : string='';
+login:FormGroup|any;
 
   constructor(private router:Router,private fb: FormBuilder,
    private redirectMenu : RedirectMenuService,

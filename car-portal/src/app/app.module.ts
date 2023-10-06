@@ -16,6 +16,7 @@ import { HomeScreenComponent } from './home-screen/home-screen.component';
 import { TimelineModule } from 'primeng/timeline';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
 import { RmCarCollecComponent } from './rm-homepage/rm-car-collec/rm-car-collec.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WorkspaceComponent } from './workspace/workspace.component';
@@ -46,6 +47,7 @@ import { MainProfileComponent } from './forgot/main-profile/main-profile.compone
     HomeScreenComponent,
     NavbarComponent,
     LoginComponent,
+    RegistrationComponent,
     RmCarCollecComponent,
     DashboardComponent,
     WorkspaceComponent,
