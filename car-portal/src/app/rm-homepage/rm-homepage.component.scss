@@ -573,6 +573,12 @@ input[type="range"]::-webkit-slider-runnable-track {
   border: solid rgba(0, 0, 0, 0.16);
   border-radius: 58px;
   width: 9.3rem;
+  text-align: right;
+}
+
+
+#inputPassword6{
+  text-align: right;
 }
 
 .finding-car-btn-btn:hover {
