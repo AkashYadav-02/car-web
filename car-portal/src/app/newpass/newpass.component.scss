@@ -26,15 +26,14 @@
 
 }
 
-.childclass1{
+.childclass1 {
 
   position: relative;
 
   width: 50%;
 
 }
-
-.childclass1 img{
+.childclass1 img {
 
   height: 51%;
 
@@ -42,27 +41,22 @@
 
 }
 
-.subchild1{
+.subchild1 {
 
   margin-top: -130px;
 
   margin-left: 2rem;
 
 }
-
-.subchild1 h1{
+.subchild1 h1 {
 
   font-size: 32px;
 
+  margin-left: -9rem;
   color: white;
-
-  // display: flex;
-
-  // font-display: flex;
-
 }
 
-.subchild1 p{
+.subchild1 p {
 
   margin-top: 2%;
 
@@ -73,7 +67,6 @@
   color: #D9D9D9;
 
 }
-
 .childclass2{
 
   margin-top: 5%;
@@ -82,7 +75,7 @@
 
   position: relative;
 
-  width: 43%;
+  width: 41%;
 
   // height: ;
 
@@ -116,11 +109,11 @@
 
 .form-group {
 
-  line-height: 1.5rem;
+  line-height: 3rem;
 
   font-family: 'Aps-Montserrat';
-
-  color: #757575;
+  font-weight: bold;
+  color: #444444;
 
   font-size: 0.7rem;
 
@@ -142,7 +135,7 @@
 
   padding-bottom: 0.5rem;
 
-  margin-top: 5%;
+  margin-top: 8%;
 
   width: 100%;
 

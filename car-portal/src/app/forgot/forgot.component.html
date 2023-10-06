@@ -13,12 +13,16 @@
 
       </div>
 
+      <div class="slider">
+        <img src="../../assets/login_image/carousel-slider.svg   ">
+
+      </div>
     </div>
 
       <div class="childclass2">
         
         <div class="header">
-          <h5 style="font-weight: bold;">Forgot Password</h5>
+          <h5 style="font-weight: bold; font-family: 'Monts';" >Forgot Password</h5>
         </div>
         <div (click)="redirect('user/login')" class="arow">
         <img src="../../assets/arrow-circle-left.png">
@@ -28,7 +32,15 @@
         <label   id="email" for="email">Enter Email Address to Request for OTP link</label>
             <br>
             <br>
-        <input  type="email"  class="form-control" formControlName="email" required >
+            <div class="container1">
+              <div class="did-floating-label-content label-input">
+
+                <input class="did-floating-input " type="text" placeholder="User Name">
+
+                <label class="did-floating-label">Name</label>
+
+              </div>
+            </div>
             <br>
         <label id="signin"> Back to sign in</label>
 
@@ -46,7 +58,7 @@
               </div>
 
               <div class="col-auto" style="font-weight: 400;">
-                <p class="or-text">Or</p>
+                <p class="or-text" style="font-weight: bold;">Or</p>
               </div>
 
               <div class="col-md-5">
@@ -57,13 +69,15 @@
 
           </div> 
          <!-- ../../assets/images/icons8-google.jpg -->
-           <button class="googlee btn btn-google"><img src="../../assets/login_image/google.png" alt="Google Logo" class="google-logo mr-2">Sign Up with Google</button>
-          
-          <button class="googlee btn btn-google"><img src="../../assets/login_image/apple.jpg" alt="Apple Logo" class="google-logo mr-2" style="font-family: 'Montserrat';">Sign Up with Apple</button>
+         <button class="googlee btn btn-google mt-3 " style="font-family: 'Monts';"><img src="../../assets/login_image/google.png" alt="Google Logo"
+          class="google-logo mr-2">Sign Up with Google</button>
         
+          <button class="googlee btn btn-google " style="font-family: 'Monts'"><img src="../../assets/login_image/apple.jpg" alt="Apple Logo"
+          class="google-logo mr-2" >Sign Up with Apple</button>
+          
           <div class="span"> 
             <!-- routerLink='register' -->
-            <span>Don't Have an Account? <a  class="fw-bold text-body" (click)="redirect('registration')">Register Here</a></span>
+            <span style="font-weight: normal;">Don't Have an Account? <a  class="fw-bold text-body" (click)="redirect('registration')">LOGIN HERE</a></span>
           </div>
 
         </form> 
