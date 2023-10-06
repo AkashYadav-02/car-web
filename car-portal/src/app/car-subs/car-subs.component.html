@@ -49,24 +49,26 @@
             </div>
 
             <div class="leftcard my-3">
-                <div style="display: flex; justify-content: space-between;">
+                <div style="display: flex; justify-content: space-between; ">
                     <div>
                         <h2>Nissan Maxima Platinum 2022</h2>
-                        <p class="mb-5">Engine Capacity 3.5 L/213 . Diesel . Manual</p>
+                        <p class="mb-4">Engine Capacity 3.5 L/213 &bull; Diesel &bull; Manual</p>
                     </div>
                     <div style="text-align: center;">
                         <i style="font-size: 30px;" class="fa-regular fa-heart"></i>
                         <p style="font-size: 13px;">1 Person <br>Shortlisted</p>
                     </div>
                 </div>
-                
+                <p style="font-size: 15px; font-family: Inter; color: #636363;">Select Variant <i class="fa-solid fa-chevron-down" style="margin-left: 5px;"></i></p>
                 <div class="coloraccessories">
                     <div>
                         <h3>Color</h3>
-                        <button class="redbtn btn btn-danger border border-primary"></button>
-                        <button class="redbtn btn btn-success"></button>
-                        <button class="redbtn btn btn-warning"></button>
-                        <button class="redbtn btn btn-secondary"></button>
+                        <form >
+                        <button id="#45473D" class="redbtn btn" style="background-color: #45473D; outline: solid 2px #ffffff;" (click)="outline($event)"></button>
+                        <button id="#000000" class="redbtn btn" style="background-color: #000000; outline: solid 2px #ffffff;" (click)="outline($event)"></button>
+                        <button id="#DB2423" class="redbtn btn" style="background-color: #DB2423; outline: solid 2px #ffffff;" (click)="outline($event)"></button>
+                        <button id="#9f9f9f" class="redbtn btn" style="background-color: #9f9f9f; outline: solid 2px #ffffff;" (click)="outline($event)"></button>
+                    </form>
                     </div>
                     <div>
                         <h3>Car Accessories</h3>
@@ -83,15 +85,15 @@
                     <ul class="bs4-order-tracking">
                         <li class="step">
                             <div><i class="fa-solid fa-circle-dot" style="color: #db0000; font-size: 16px;"></i></div>
-                            <p>Build Car</p>
+                            <p class="activestep" style="margin-left: 30px;">Build Car</p>
                         </li>
                         <li class="step">
                             <div><i class="fa-solid fa-2" style="color: gray;"></i></div>
-                            <p>Personal Info</p>
+                            <p style="margin-left: 22px;">Personal Info</p>
                         </li>
                         <li class="step">
                             <div><i class="fa-solid fa-3" style="color: gray;"></i></div>
-                            <p>Payment</p>
+                            <p style="margin-left: 32px;">Payment</p>
                         </li>
                     </ul>
                 </div>
@@ -155,25 +157,6 @@
                             checked>
                         <label class="form-check-label" for="flexSwitchCheckChecked">Yes</label>
                     </div>
-
-                    <p class='subhead'>Percentage</p>
-                    <p style="font-size: 13px; margin-top: -15px; margin-bottom: 10px; font-weight: bold; color:grey">Adjust Slider or Type in the Percentage</p>
-                    
-                        <div class="container rangerr">
-                            <p><b>%</b></p>
-                            <!-- <input class="border border-1 rangerinp" type="search" placeholder="Search" aria-label="Search"> -->
-                        </div>
-                    
-                    <input type="range" id="vol" name="vol" min="0" max="100" list="tickmarks" style="accent-color: #E42346; width: 100%; height: 5px;">
-                    <datalist id="tickmarks">
-                        <option value="5" label="5%"></option>
-                        <option value="10" label="10%"></option>
-                        <option value="15" label="15%"></option>
-                        <option value="20" label="20%"></option>
-                        <option value="25" label="25%"></option>
-                        <option value="30" label="30%"></option>
-                        <option value="35" label="35%"></option>
-                      </datalist>
                 </div>
                 <hr>
                 <p class="lc-header"  (click)="onPress()">Eligibility<i class="fa-solid" [class.fa-angle-down]="isLowerVisible" [class.fa-angle-up]="!isLowerVisible"></i></p>

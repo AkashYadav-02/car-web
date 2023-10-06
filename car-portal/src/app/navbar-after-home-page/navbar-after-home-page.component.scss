@@ -2,9 +2,7 @@
     // margin-left: 65px;
     // margin-right: 65px;
     position: fixed;
-    width: 100%;
-    padding-left: 65px;
-    padding-right: 65px;
+    width: 91.5%;
     left: 50%;   // align items at center in fixed position
     transform: translate(-50%, 0%); // align items at center in fixed position
     z-index: 10;
@@ -28,7 +26,7 @@
     display: flex;
     position: absolute;
     background-color: black;
-    width: 15%;
+    width: 17%;
     height: 25rem;
     //margin-top: 80px;
     //margin-left:70px;

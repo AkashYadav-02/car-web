@@ -37,4 +37,9 @@ export class CarSubsComponent implements OnInit{
     }
   }
 
+  inputtxt=''
+  outline(event:Event){
+    (<HTMLButtonElement>event.target).style.outlineColor=(<HTMLButtonElement>event.target).id
+  }
+
 }

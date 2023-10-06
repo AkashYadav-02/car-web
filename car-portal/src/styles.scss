@@ -30,9 +30,7 @@
 }
 
 .ag-theme-alpine{
-
     // --ag-grid-size: 5px !important;
-
     --ag-row-height:30px;
 
 }
@@ -43,6 +41,7 @@
 
 body::-webkit-scrollbar {
     width: 5px;               /* width of the entire scrollbar */
+    height: 5px;
   }
   
 body::-webkit-scrollbar-track {
